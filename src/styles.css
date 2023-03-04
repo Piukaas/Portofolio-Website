@@ -203,7 +203,7 @@ body {
 }
 
 .big-project-title {
-  font-size: 35px;
+  font-size: 29px;
 }
 
 /* Contact Link Buttons */
@@ -335,11 +335,7 @@ a.read-more:hover {
   transition: 1s;
   margin-right: 5%;
   width: 100%;
-  border: 2px solid rgb(25, 25, 25);
-}
-
-[theme="dark"] .project-image {
-  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 5px 10px 18px rgb(25, 25, 25);
 }
 
 .project-image:hover {
