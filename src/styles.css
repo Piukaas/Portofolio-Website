@@ -254,7 +254,7 @@ body {
   border: 0;
   padding: 0.6em;
   background-color: rgb(25, 25, 25);
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Anonymous Pro", monospace;
   font-size: 15px;
   border-radius: 25px;
@@ -272,11 +272,12 @@ body {
   background-color: rgb(25, 25, 25);
   border-radius: 3px;
   width: 10em;
+  text-align: center;
   font-size: 12px;
   padding: 0.5em;
   color: rgb(255, 255, 255);
   display: none;
-  animation: moveup 0.1s linear;
+  animation: moveup 1s linear;
 }
 
 [theme="dark"] .tooltip {
@@ -284,11 +285,11 @@ body {
   color: rgb(25, 25, 25);
 }
 
-button.tag:hover {
+.tag:hover {
   cursor: help;
 }
 
-button.tag:hover .tooltip {
+.tag:hover .tooltip {
   display: block;
 }
 
