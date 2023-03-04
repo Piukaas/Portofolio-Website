@@ -312,6 +312,40 @@ a.source-code:hover svg {
   margin: 0 auto;
 }
 
+.collapsable {
+  background-color: transparent;
+  border: none;
+  transition: 1s;
+}
+
+.collapsable:hover {
+  scale: 1.1;
+  animation: bounce2 0.75s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.5, 0.5, 0.5);
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce2 {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 2px, 0);
+  }
+}
+
+@-webkit-keyframes bounce2 {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+}
+
 .center-div {
   margin: auto;
   width: 100%;

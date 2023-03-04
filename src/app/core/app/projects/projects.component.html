@@ -1,568 +1,800 @@
 <!-- 2023 Projects -->
-<h3 class="center-text top-padding">2023</h3>
+<h3 class="center-text top-padding">
+  2023<button
+    *ngIf="!is2023"
+    (click)="toggle2023()"
+    class="collapsable upanddown"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-arrows-collapse"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8Zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0Zm-.5 11.707-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793Z"
+      />
+    </svg>
+  </button>
+  <button *ngIf="is2023" (click)="toggle2023()" class="collapsable">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-arrows-expand"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8ZM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2ZM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10Z"
+      />
+    </svg>
+  </button>
+</h3>
 <hr class="year-line bottom-padding" />
 
-<div class="row top-padding center-div">
-  <div class="content col-md-5 project-description">
-    <h1 class="no-top-margin big-project-title">
-      Portofolio
-      <a class="source-code" href="">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-file-earmark-code-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
-          />
-        </svg>
-      </a>
-    </h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-      amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-      viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-      elementum mauris condimentum. In condimentum eros ac consequat tincidunt.
-      Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel lacus nulla.
-      Pellentesque vitae tortor malesuada, mollis mauris non, luctus velit. Duis
-      purus nulla, hendrerit in vehicula sed, convallis nec nisi. In eget
-      porttitor orci.
-      <br />
-      <br />
-      <a class="read-more">Read more</a>
-    </p>
+<div [hidden]="is2023">
+  <div class="row top-padding center-div">
+    <div class="content col-md-5 project-description">
+      <h1 class="no-top-margin big-project-title">
+        Portofolio
+        <a class="source-code" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+        </a>
+      </h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
+        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
+        elementum mauris condimentum. In condimentum eros ac consequat
+        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
+        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
+        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
+        nisi. In eget porttitor orci.
+        <br />
+        <br />
+        <a class="read-more">Read more</a>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="../../../assets/portofolio.png" class="project-image" />
+    </div>
+    <div>
+      <button class="tag">Angular</button>
+      <button disabled class="vl"></button>
+      <button class="tag">TypeScript</button>
+      <button class="tag">JavaScript</button>
+      <button class="tag">HTML</button>
+      <button class="tag">CSS</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Frontend</button>
+    </div>
+    <hr
+      class="bottom-padding center-div"
+      style="margin-top: 20px; width: 70%"
+    />
   </div>
-  <div class="col-md-6">
-    <img src="../../../assets/portofolio.png" class="project-image" />
-  </div>
-  <div>
-    <button class="tag">Angular</button>
-    <button disabled class="vl"></button>
-    <button class="tag">TypeScript</button>
-    <button class="tag">JavaScript</button>
-    <button class="tag">HTML</button>
-    <button class="tag">CSS</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Frontend</button>
-  </div>
-  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
 </div>
 
 <!-- 2022 Projects -->
-<h3 class="top-padding center-text">2022</h3>
+<h3 class="top-padding center-text">
+  2022<button
+    *ngIf="!is2022"
+    (click)="toggle2022()"
+    class="collapsable upanddown"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-arrows-collapse"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8Zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0Zm-.5 11.707-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793Z"
+      />
+    </svg>
+  </button>
+  <button *ngIf="is2022" (click)="toggle2022()" class="collapsable">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-arrows-expand"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8ZM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2ZM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10Z"
+      />
+    </svg>
+  </button>
+</h3>
 <hr class="year-line bottom-padding" />
 
-<div class="row top-padding center-div">
-  <div class="content col-md-5 project-description">
-    <h1 class="no-top-margin big-project-title">
-      The Circle
-      <a class="source-code" href="">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-file-earmark-code-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
-          />
-        </svg>
-      </a>
-    </h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-      amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-      viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-      elementum mauris condimentum. In condimentum eros ac consequat tincidunt.
-      Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel lacus nulla.
-      Pellentesque vitae tortor malesuada, mollis mauris non, luctus velit. Duis
-      purus nulla, hendrerit in vehicula sed, convallis nec nisi. In eget
-      porttitor orci.
-      <br />
-      <br />
-      <a class="read-more">Read more</a>
-    </p>
+<div [hidden]="is2022">
+  <div class="row top-padding center-div">
+    <div class="content col-md-5 project-description">
+      <h1 class="no-top-margin big-project-title">
+        The Circle
+        <a class="source-code" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+        </a>
+      </h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
+        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
+        elementum mauris condimentum. In condimentum eros ac consequat
+        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
+        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
+        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
+        nisi. In eget porttitor orci.
+        <br />
+        <br />
+        <a class="read-more">Read more</a>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="../../../assets/circle.png" class="project-image" />
+    </div>
+    <div>
+      <button class="tag">Angular</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Scrum</button>
+      <button class="tag">Scrum Master</button>
+      <button disabled class="vl"></button>
+      <button class="tag">TypeScript</button>
+      <button class="tag">JavaScript</button>
+      <button class="tag">RTMP</button>
+      <button class="tag">HTML</button>
+      <button class="tag">CSS</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Frontend</button>
+    </div>
+    <hr
+      class="bottom-padding center-div"
+      style="margin-top: 20px; width: 70%"
+    />
   </div>
-  <div class="col-md-6">
-    <img src="../../../assets/circle.png" class="project-image" />
-  </div>
-  <div>
-    <button class="tag">Angular</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Scrum</button>
-    <button class="tag">Scrum Master</button>
-    <button disabled class="vl"></button>
-    <button class="tag">TypeScript</button>
-    <button class="tag">JavaScript</button>
-    <button class="tag">RTMP</button>
-    <button class="tag">HTML</button>
-    <button class="tag">CSS</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Frontend</button>
-  </div>
-  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
-</div>
 
-<div class="row top-padding center-div">
-  <div class="col-md-6">
-    <img src="../../../assets/data-science.png" class="project-image" />
+  <div class="row top-padding center-div">
+    <div class="col-md-6">
+      <img src="../../../assets/data-science.png" class="project-image" />
+    </div>
+    <div class="content col-md-5 project-description">
+      <h1 class="no-top-margin big-project-title">
+        Data Science Portofolio
+        <a class="source-code" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+        </a>
+      </h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
+        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
+        elementum mauris condimentum. In condimentum eros ac consequat
+        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
+        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
+        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
+        nisi. In eget porttitor orci.
+        <br />
+        <br />
+        <a class="read-more">Read more</a>
+      </p>
+    </div>
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+      <button class="tag">Jupyter Notebook</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Python</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Backend</button>
+    </div>
+    <hr
+      class="bottom-padding center-div"
+      style="margin-top: 20px; width: 70%"
+    />
   </div>
-  <div class="content col-md-5 project-description">
-    <h1 class="no-top-margin big-project-title">
-      Data Science Portofolio
-      <a class="source-code" href="">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-file-earmark-code-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
-          />
-        </svg>
-      </a>
-    </h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-      amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-      viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-      elementum mauris condimentum. In condimentum eros ac consequat tincidunt.
-      Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel lacus nulla.
-      Pellentesque vitae tortor malesuada, mollis mauris non, luctus velit. Duis
-      purus nulla, hendrerit in vehicula sed, convallis nec nisi. In eget
-      porttitor orci.
-      <br />
-      <br />
-      <a class="read-more">Read more</a>
-    </p>
-  </div>
-  <div class="col-md-6"></div>
-  <div class="col-md-6">
-    <button class="tag">Jupyter Notebook</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Python</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Backend</button>
-  </div>
-  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
-</div>
 
-<div class="row top-padding center-div">
-  <div class="content col-md-5 project-description">
-    <h1 class="no-top-margin big-project-title">
-      Project Kramse
-      <a class="source-code" href="">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-file-earmark-code-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
-          />
-        </svg>
-      </a>
-    </h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-      amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-      viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-      elementum mauris condimentum. In condimentum eros ac consequat tincidunt.
-      Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel lacus nulla.
-      Pellentesque vitae tortor malesuada, mollis mauris non, luctus velit. Duis
-      purus nulla, hendrerit in vehicula sed, convallis nec nisi. In eget
-      porttitor orci.
-      <br />
-      <br />
-      <a class="read-more">Read more</a>
-    </p>
+  <div class="row top-padding center-div">
+    <div class="content col-md-5 project-description">
+      <h1 class="no-top-margin big-project-title">
+        Project Kramse
+        <a class="source-code" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+        </a>
+      </h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
+        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
+        elementum mauris condimentum. In condimentum eros ac consequat
+        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
+        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
+        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
+        nisi. In eget porttitor orci.
+        <br />
+        <br />
+        <a class="read-more">Read more</a>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="../../../assets/kramse.png" class="project-image" />
+    </div>
+    <div>
+      <button class="tag">Visual Studio</button>
+      <button class="tag">Power BI</button>
+      <button disabled class="vl"></button>
+      <button class="tag">OLAP</button>
+      <button class="tag">MDM</button>
+      <button class="tag">DWA</button>
+      <button class="tag">MySQL</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Full Stack</button>
+    </div>
+    <hr
+      class="bottom-padding center-div"
+      style="margin-top: 20px; width: 70%"
+    />
   </div>
-  <div class="col-md-6">
-    <img src="../../../assets/kramse.png" class="project-image" />
-  </div>
-  <div>
-    <button class="tag">Visual Studio</button>
-    <button class="tag">Power BI</button>
-    <button disabled class="vl"></button>
-    <button class="tag">OLAP</button>
-    <button class="tag">MDM</button>
-    <button class="tag">DWA</button>
-    <button class="tag">MySQL</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Full Stack</button>
-  </div>
-  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
 </div>
 
 <!-- 2021 Projects -->
-<h3 class="top-padding center-text">2021</h3>
+<h3 class="top-padding center-text">
+  2021<button
+    *ngIf="!is2021"
+    (click)="toggle2021()"
+    class="collapsable upanddown"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-arrows-collapse"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8Zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0Zm-.5 11.707-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793Z"
+      />
+    </svg>
+  </button>
+  <button *ngIf="is2021" (click)="toggle2021()" class="collapsable">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-arrows-expand"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8ZM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2ZM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10Z"
+      />
+    </svg>
+  </button>
+</h3>
 <hr class="year-line bottom-padding" />
 
-<div class="row top-padding center-div">
-  <div class="content col-md-5 project-description">
-    <h1 class="no-top-margin big-project-title">
-      Stel je Vraag LIVE! - CM.com
-      <a class="source-code" href="">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-file-earmark-code-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
-          />
-        </svg>
-      </a>
-    </h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-      amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-      viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-      elementum mauris condimentum. In condimentum eros ac consequat tincidunt.
-      Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel lacus nulla.
-      Pellentesque vitae tortor malesuada, mollis mauris non, luctus velit. Duis
-      purus nulla, hendrerit in vehicula sed, convallis nec nisi. In eget
-      porttitor orci.
-      <br />
-      <br />
-      <a class="read-more">Read more</a>
-    </p>
+<div [hidden]="is2021">
+  <div class="row top-padding center-div">
+    <div class="content col-md-5 project-description">
+      <h1 class="no-top-margin big-project-title">
+        Stel je Vraag LIVE! - CM.com
+        <a class="source-code" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+        </a>
+      </h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
+        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
+        elementum mauris condimentum. In condimentum eros ac consequat
+        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
+        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
+        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
+        nisi. In eget porttitor orci.
+        <br />
+        <br />
+        <a class="read-more">Read more</a>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="../../../assets/cmcom.png" class="project-image" />
+    </div>
+    <div>
+      <button class="tag">Angular</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Scrum</button>
+      <button class="tag">Scrum Master</button>
+      <button disabled class="vl"></button>
+      <button class="tag">TypeScript</button>
+      <button class="tag">Node.js</button>
+      <button class="tag">WebRTC</button>
+      <button class="tag">MySQL</button>
+      <button class="tag">HTML</button>
+      <button class="tag">CSS</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Full Stack</button>
+    </div>
+    <hr
+      class="bottom-padding center-div"
+      style="margin-top: 20px; width: 70%"
+    />
   </div>
-  <div class="col-md-6">
-    <img src="../../../assets/cmcom.png" class="project-image" />
-  </div>
-  <div>
-    <button class="tag">Angular</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Scrum</button>
-    <button class="tag">Scrum Master</button>
-    <button disabled class="vl"></button>
-    <button class="tag">TypeScript</button>
-    <button class="tag">Node.js</button>
-    <button class="tag">WebRTC</button>
-    <button class="tag">MySQL</button>
-    <button class="tag">HTML</button>
-    <button class="tag">CSS</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Full Stack</button>
-  </div>
-  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
-</div>
 
-<div class="row top-padding center-div">
-  <div class="col-md-6">
-    <img src="../../../assets/client.png" class="project-image" />
+  <div class="row top-padding center-div">
+    <div class="col-md-6">
+      <img src="../../../assets/client.png" class="project-image" />
+    </div>
+    <div class="content col-md-5 project-description">
+      <h1 class="no-top-margin big-project-title">
+        Dead by Daylight - Client-side
+        <a class="source-code" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+        </a>
+      </h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
+        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
+        elementum mauris condimentum. In condimentum eros ac consequat
+        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
+        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
+        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
+        nisi. In eget porttitor orci.
+        <br />
+        <br />
+        <a class="read-more">Read more</a>
+      </p>
+    </div>
+    <div class="col-md-5"></div>
+    <div class="col-md-7">
+      <button class="tag">Angular</button>
+      <button class="tag">Neo4j</button>
+      <button class="tag">MongoDB</button>
+      <button disabled class="vl"></button>
+      <button class="tag">TypeScript</button>
+      <button class="tag">Node.js</button>
+      <button class="tag">NoSQL</button>
+      <button class="tag">HTML</button>
+      <button class="tag">CSS</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Full Stack</button>
+    </div>
+    <hr
+      class="bottom-padding center-div"
+      style="margin-top: 20px; width: 70%"
+    />
   </div>
-  <div class="content col-md-5 project-description">
-    <h1 class="no-top-margin big-project-title">
-      Dead by Daylight - Client-side
-      <a class="source-code" href="">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-file-earmark-code-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
-          />
-        </svg>
-      </a>
-    </h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-      amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-      viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-      elementum mauris condimentum. In condimentum eros ac consequat tincidunt.
-      Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel lacus nulla.
-      Pellentesque vitae tortor malesuada, mollis mauris non, luctus velit. Duis
-      purus nulla, hendrerit in vehicula sed, convallis nec nisi. In eget
-      porttitor orci.
-      <br />
-      <br />
-      <a class="read-more">Read more</a>
-    </p>
-  </div>
-  <div class="col-md-5"></div>
-  <div class="col-md-7">
-    <button class="tag">Angular</button>
-    <button class="tag">Neo4j</button>
-    <button class="tag">MongoDB</button>
-    <button disabled class="vl"></button>
-    <button class="tag">TypeScript</button>
-    <button class="tag">Node.js</button>
-    <button class="tag">NoSQL</button>
-    <button class="tag">HTML</button>
-    <button class="tag">CSS</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Full Stack</button>
-  </div>
-  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
-</div>
 
-<div class="row top-padding center-div">
-  <div class="content col-md-5 project-description">
-    <h1 class="no-top-margin big-project-title">
-      Fysioterapie - Client-side
-      <a class="source-code" href="">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-file-earmark-code-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
-          />
-        </svg>
-      </a>
-    </h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-      amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-      viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-      elementum mauris condimentum. In condimentum eros ac consequat tincidunt.
-      Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel lacus nulla.
-      Pellentesque vitae tortor malesuada, mollis mauris non, luctus velit. Duis
-      purus nulla, hendrerit in vehicula sed, convallis nec nisi. In eget
-      porttitor orci.
-      <br />
-      <br />
-      <a class="read-more">Read more</a>
-    </p>
+  <div class="row top-padding center-div">
+    <div class="content col-md-5 project-description">
+      <h1 class="no-top-margin big-project-title">
+        Fysioterapie - Client-side
+        <a class="source-code" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+        </a>
+      </h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
+        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
+        elementum mauris condimentum. In condimentum eros ac consequat
+        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
+        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
+        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
+        nisi. In eget porttitor orci.
+        <br />
+        <br />
+        <a class="read-more">Read more</a>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="../../../assets/server.png" class="project-image" />
+    </div>
+    <div>
+      <button class="tag">ASP.NET Core</button>
+      <button class="tag">Azure DevOps</button>
+      <button disabled class="vl"></button>
+      <button class="tag">C#</button>
+      <button class="tag">MySQL</button>
+      <button class="tag">Onion Architecture</button>
+      <button class="tag">HTML</button>
+      <button class="tag">CSS</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Full Stack</button>
+    </div>
+    <hr
+      class="bottom-padding center-div"
+      style="margin-top: 20px; width: 70%"
+    />
   </div>
-  <div class="col-md-6">
-    <img src="../../../assets/server.png" class="project-image" />
-  </div>
-  <div>
-    <button class="tag">ASP.NET Core</button>
-    <button class="tag">Azure DevOps</button>
-    <button disabled class="vl"></button>
-    <button class="tag">C#</button>
-    <button class="tag">MySQL</button>
-    <button class="tag">Onion Architecture</button>
-    <button class="tag">HTML</button>
-    <button class="tag">CSS</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Full Stack</button>
-  </div>
-  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
-</div>
 
-<div class="row top-padding center-div">
-  <div class="col-md-6">
-    <img src="../../../assets/seeking-safety.png" class="project-image" />
+  <div class="row top-padding center-div">
+    <div class="col-md-6">
+      <img src="../../../assets/seeking-safety.png" class="project-image" />
+    </div>
+    <div class="content col-md-5 project-description">
+      <h1 class="no-top-margin big-project-title">
+        Seeking Safety - KFZ
+        <a class="source-code" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+        </a>
+      </h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
+        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
+        elementum mauris condimentum. In condimentum eros ac consequat
+        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
+        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
+        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
+        nisi. In eget porttitor orci.
+        <br />
+        <br />
+        <a class="read-more">Read more</a>
+      </p>
+    </div>
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+      <button class="tag">Android Studio</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Kanban</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Java</button>
+      <button class="tag">XML</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Frontend</button>
+    </div>
+    <hr
+      class="bottom-padding center-div"
+      style="margin-top: 20px; width: 70%"
+    />
   </div>
-  <div class="content col-md-5 project-description">
-    <h1 class="no-top-margin big-project-title">
-      Seeking Safety - KFZ
-      <a class="source-code" href="">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-file-earmark-code-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
-          />
-        </svg>
-      </a>
-    </h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-      amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-      viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-      elementum mauris condimentum. In condimentum eros ac consequat tincidunt.
-      Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel lacus nulla.
-      Pellentesque vitae tortor malesuada, mollis mauris non, luctus velit. Duis
-      purus nulla, hendrerit in vehicula sed, convallis nec nisi. In eget
-      porttitor orci.
-      <br />
-      <br />
-      <a class="read-more">Read more</a>
-    </p>
-  </div>
-  <div class="col-md-6"></div>
-  <div class="col-md-6">
-    <button class="tag">Android Studio</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Kanban</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Java</button>
-    <button class="tag">XML</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Frontend</button>
-  </div>
-  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
-</div>
 
-<div class="row top-padding center-div">
-  <div class="content col-md-5 project-description">
-    <h1 class="no-top-margin big-project-title">
-      Samen Eten - Node.js API
-      <a class="source-code" href="">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-file-earmark-code-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
-          />
-        </svg>
-      </a>
-    </h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-      amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-      viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-      elementum mauris condimentum. In condimentum eros ac consequat tincidunt.
-      Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel lacus nulla.
-      Pellentesque vitae tortor malesuada, mollis mauris non, luctus velit. Duis
-      purus nulla, hendrerit in vehicula sed, convallis nec nisi. In eget
-      porttitor orci.
-      <br />
-      <br />
-      <a class="read-more">Read more</a>
-    </p>
+  <div class="row top-padding center-div">
+    <div class="content col-md-5 project-description">
+      <h1 class="no-top-margin big-project-title">
+        Samen Eten - Node.js API
+        <a class="source-code" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+        </a>
+      </h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
+        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
+        elementum mauris condimentum. In condimentum eros ac consequat
+        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
+        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
+        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
+        nisi. In eget porttitor orci.
+        <br />
+        <br />
+        <a class="read-more">Read more</a>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="../../../assets/maaltijd.png" class="project-image" />
+    </div>
+    <div>
+      <button class="tag">Node.js</button>
+      <button class="tag">Postman</button>
+      <button disabled class="vl"></button>
+      <button class="tag">JavaScript</button>
+      <button class="tag">JSON</button>
+      <button class="tag">MySQL</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Backend</button>
+    </div>
+    <hr
+      class="bottom-padding center-div"
+      style="margin-top: 20px; width: 70%"
+    />
   </div>
-  <div class="col-md-6">
-    <img src="../../../assets/maaltijd.png" class="project-image" />
-  </div>
-  <div>
-    <button class="tag">Node.js</button>
-    <button class="tag">Postman</button>
-    <button disabled class="vl"></button>
-    <button class="tag">JavaScript</button>
-    <button class="tag">JSON</button>
-    <button class="tag">MySQL</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Backend</button>
-  </div>
-  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
-</div>
 
-<div class="row top-padding center-div">
-  <div class="col-md-6">
-    <img src="../../../assets/davidetheatre.png" class="project-image" />
+  <div class="row top-padding center-div">
+    <div class="col-md-6">
+      <img src="../../../assets/davidetheatre.png" class="project-image" />
+    </div>
+    <div class="content col-md-5 project-description">
+      <h1 class="no-top-margin big-project-title">
+        Davide Theatre - Android App
+        <a class="source-code" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+        </a>
+      </h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
+        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
+        elementum mauris condimentum. In condimentum eros ac consequat
+        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
+        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
+        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
+        nisi. In eget porttitor orci.
+        <br />
+        <br />
+        <a class="read-more">Read more</a>
+      </p>
+    </div>
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+      <button class="tag">Android Studio</button>
+      <button class="tag">Public API</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Java</button>
+      <button class="tag">XML</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Frontend</button>
+    </div>
+    <hr
+      class="bottom-padding center-div"
+      style="margin-top: 20px; width: 70%"
+    />
   </div>
-  <div class="content col-md-5 project-description">
-    <h1 class="no-top-margin big-project-title">
-      Davide Theatre - Android App
-      <a class="source-code" href="">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-file-earmark-code-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
-          />
-        </svg>
-      </a>
-    </h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-      amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-      viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-      elementum mauris condimentum. In condimentum eros ac consequat tincidunt.
-      Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel lacus nulla.
-      Pellentesque vitae tortor malesuada, mollis mauris non, luctus velit. Duis
-      purus nulla, hendrerit in vehicula sed, convallis nec nisi. In eget
-      porttitor orci.
-      <br />
-      <br />
-      <a class="read-more">Read more</a>
-    </p>
-  </div>
-  <div class="col-md-6"></div>
-  <div class="col-md-6">
-    <button class="tag">Android Studio</button>
-    <button class="tag">Public API</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Java</button>
-    <button class="tag">XML</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Frontend</button>
-  </div>
-  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
-</div>
 
-<div class="row top-padding center-div">
-  <div class="content col-md-5 project-description">
-    <h1 class="no-top-margin big-project-title">
-      Breaking Bad - Android App
-      <a class="source-code" href="">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-file-earmark-code-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
-          />
-        </svg>
-      </a>
-    </h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-      amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-      viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-      elementum mauris condimentum. In condimentum eros ac consequat tincidunt.
-      Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel lacus nulla.
-      Pellentesque vitae tortor malesuada, mollis mauris non, luctus velit. Duis
-      purus nulla, hendrerit in vehicula sed, convallis nec nisi. In eget
-      porttitor orci.
-      <br />
-      <br />
-      <a class="read-more">Read more</a>
-    </p>
+  <div class="row top-padding center-div">
+    <div class="content col-md-5 project-description">
+      <h1 class="no-top-margin big-project-title">
+        Breaking Bad - Android App
+        <a class="source-code" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+        </a>
+      </h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
+        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
+        elementum mauris condimentum. In condimentum eros ac consequat
+        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
+        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
+        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
+        nisi. In eget porttitor orci.
+        <br />
+        <br />
+        <a class="read-more">Read more</a>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="../../../assets/breakingbad.png" class="project-image" />
+    </div>
+    <div>
+      <button class="tag">Android Studio</button>
+      <button class="tag">Public API</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Java</button>
+      <button class="tag">XML</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Frontend</button>
+    </div>
+    <hr
+      class="bottom-padding center-div"
+      style="margin-top: 20px; width: 70%"
+    />
   </div>
-  <div class="col-md-6">
-    <img src="../../../assets/breakingbad.png" class="project-image" />
-  </div>
-  <div>
-    <button class="tag">Android Studio</button>
-    <button class="tag">Public API</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Java</button>
-    <button class="tag">XML</button>
-    <button disabled class="vl"></button>
-    <button class="tag">Frontend</button>
-  </div>
-  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
 </div>
 
 <!-- 2020 Projects -->
-<h3 class="top-padding center-text">2020</h3>
+<h3 class="top-padding center-text">
+  2020<button
+    *ngIf="!is2020"
+    (click)="toggle2020()"
+    class="collapsable upanddown"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-arrows-collapse"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8Zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0Zm-.5 11.707-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793Z"
+      />
+    </svg>
+  </button>
+  <button *ngIf="is2020" (click)="toggle2020()" class="collapsable">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-arrows-expand"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8ZM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2ZM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10Z"
+      />
+    </svg>
+  </button>
+</h3>
 <hr class="year-line bottom-padding" />
+
+<div [hidden]="is2020">
+  <div class="row top-padding center-div">
+    <div class="content col-md-5 project-description">
+      <h1 class="no-top-margin big-project-title">
+        Clockbuster - Webdesign
+        <a class="source-code" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+        </a>
+      </h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
+        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
+        elementum mauris condimentum. In condimentum eros ac consequat
+        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
+        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
+        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
+        nisi. In eget porttitor orci.
+        <br />
+        <br />
+        <a class="read-more">Read more</a>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="../../../assets/movie.png" class="project-image" />
+    </div>
+    <div>
+      <button class="tag">Bootstrap</button>
+      <button disabled class="vl"></button>
+      <button class="tag">JavaScript</button>
+      <button class="tag">HTML</button>
+      <button class="tag">CSS</button>
+      <button disabled class="vl"></button>
+      <button class="tag">Frontend</button>
+    </div>
+    <hr
+      class="bottom-padding center-div"
+      style="margin-top: 20px; width: 70%"
+    />
+  </div>
+</div>
