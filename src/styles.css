@@ -202,6 +202,10 @@ body {
   font-size: 30px;
 }
 
+.big-project-title {
+  font-size: 35px;
+}
+
 /* Contact Link Buttons */
 .contact-link {
   border: 0;
@@ -255,7 +259,6 @@ body {
   padding: 0.6em;
   background-color: rgb(25, 25, 25);
   color: rgb(255, 255, 255);
-  font-family: "Anonymous Pro", monospace;
   font-size: 15px;
   border-radius: 25px;
   transition: 1s;
@@ -266,57 +269,8 @@ body {
   color: rgb(25, 25, 25);
 }
 
-.tooltip {
-  position: absolute;
-  bottom: 110%;
-  background-color: rgb(25, 25, 25);
-  border-radius: 3px;
-  width: 10em;
-  text-align: center;
-  font-size: 12px;
-  padding: 0.5em;
-  color: rgb(255, 255, 255);
-  display: none;
-  animation: moveup 1s linear;
-}
-
-[theme="dark"] .tooltip {
-  background-color: rgb(255, 255, 255);
-  color: rgb(25, 25, 25);
-}
-
 .tag:hover {
-  cursor: help;
-}
-
-.tag:hover .tooltip {
-  display: block;
-}
-
-.tooltip:after {
-  position: absolute;
-  content: "";
-  top: 100%;
-  left: 10%;
-  border-top: 5px solid rgb(25, 25, 25);
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid transparent;
-}
-
-[theme="dark"] .tooltip:after {
-  border-top: 5px solid rgb(255, 255, 255);
-}
-
-@keyframes moveup {
-  0% {
-    transform: translateY(10px) rotate(25deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
+  cursor: default;
 }
 
 .vl {
@@ -327,6 +281,10 @@ body {
   margin-right: 5px;
   margin-left: -10px;
   transition: 1s;
+}
+
+.vl:hover {
+  cursor: default;
 }
 
 [theme="dark"] .vl {
@@ -359,17 +317,8 @@ a.source-code:hover svg {
   width: 100%;
 }
 
-.section {
-  display: flex;
-  flex-direction: row;
-}
-
-.paragraph {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  height: 15em;
-  overflow: hidden;
+.project-description {
+  margin-right: 5%;
 }
 
 .content {
@@ -384,6 +333,13 @@ a.read-more:hover {
 .project-image {
   border-radius: 10px;
   transition: 1s;
+  margin-right: 5%;
+  width: 100%;
+  border: 2px solid rgb(25, 25, 25);
+}
+
+[theme="dark"] .project-image {
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .project-image:hover {
