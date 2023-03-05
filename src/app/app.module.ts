@@ -10,9 +10,15 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./core/app/app.component";
 import { DashboardComponent } from "./core/app/dashboard/dashboard.component";
 import { ProjectsComponent } from "./core/app/projects/projects.component";
+import { FooterComponent } from "./core/app/footer/footer.component";
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, ProjectsComponent],
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    ProjectsComponent,
+    FooterComponent,
+  ],
   imports: [
     CommonModule,
     BrowserModule,

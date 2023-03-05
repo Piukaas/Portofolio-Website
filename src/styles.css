@@ -457,3 +457,33 @@ a.read-more:hover {
     border-right-color: transparent;
   }
 }
+
+/* Footer */
+.footer-link {
+  border: 0;
+  width: 3.75em;
+  padding: 1em;
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 25, 25);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 1s;
+  margin-right: 20px;
+}
+
+.footer-link a {
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+
+[theme="dark"] .footer-link {
+  background-color: rgb(255, 255, 255);
+}
+
+[theme="dark"] .footer-link a {
+  color: rgb(25, 25, 25);
+}
+
+.footer-link:hover {
+  transform: scale(1.1);
+}
