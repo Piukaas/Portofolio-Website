@@ -315,7 +315,12 @@ a.source-code:hover svg {
 .collapsable {
   background-color: transparent;
   border: none;
+  color: rgb(25, 25, 25);
   transition: 1s;
+}
+
+[theme="dark"] .collapsable {
+  color: rgb(255, 255, 255);
 }
 
 .collapsable:hover {
@@ -359,9 +364,24 @@ a.source-code:hover svg {
   margin-right: 20px;
 }
 
+.read-more {
+  color: rgb(25, 25, 25);
+  text-decoration: none;
+  transition: 1s;
+}
+
+[theme="dark"] .read-more {
+  color: rgb(255, 255, 255);
+}
+
 a.read-more:hover {
+  color: rgb(25, 25, 25);
   text-decoration: underline;
   cursor: pointer;
+}
+
+[theme="dark"] a.read-more:hover {
+  color: rgb(255, 255, 255);
 }
 
 .project-image {
@@ -374,6 +394,44 @@ a.read-more:hover {
 
 .project-image:hover {
   transform: scale(1.05);
+}
+
+/* Modal */
+.modalheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.entire-modal {
+  margin: auto;
+  color: rgb(25, 25, 25);
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+}
+
+/* Modal body will be wider and centered */
+.modalbody {
+  min-width: 1455px;
+  margin-right: 700px;
+  margin: 0 auto;
+}
+
+[theme="dark"] .entire-modal {
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 25, 25);
+}
+
+.close-modal {
+  right: 1em;
+  background-color: transparent;
+  border: none;
+  color: rgb(25, 25, 25);
+}
+
+[theme="dark"] .close-modal {
+  color: rgb(255, 255, 255);
 }
 
 /* Animation */

@@ -58,17 +58,11 @@
         </a>
       </h1>
       <p class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-        elementum mauris condimentum. In condimentum eros ac consequat
-        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
-        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
-        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
-        nisi. In eget porttitor orci.
-        <br />
-        <br />
-        <a class="read-more">Read more</a>
+        My Online Portfolio is a website that showcases my creative work as a
+        web developer, graphic designer, and content creator. The primary
+        purpose of this website is to showcase my skills and experience to
+        potential clients, employers, and collaborators.<br /><br />
+        <a class="read-more" (click)="openModal(portofolio)">Read more</a>
       </p>
     </div>
     <div class="col-md-6">
@@ -155,17 +149,19 @@
         </a>
       </h1>
       <p class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-        amet nibh dui. Donec elementum non lorem ac luctus. Sed a ex a quam
-        viverra consequat id eget metus. Ut faucibus ex eget massa interdum, eu
-        elementum mauris condimentum. In condimentum eros ac consequat
-        tincidunt. Morbi vel mi ac mauris pulvinar aliquet vel quis mi. In vel
-        lacus nulla. Pellentesque vitae tortor malesuada, mollis mauris non,
-        luctus velit. Duis purus nulla, hendrerit in vehicula sed, convallis nec
-        nisi. In eget porttitor orci.
+        This project was inspired by "The Circle", a book and film that explores
+        the dangers of transparency and constantly being watched. The project
+        consisted of three components - a website for viewing streams and
+        chatting, an Android app for starting streams, and a backend server for
+        monitoring streams and storing data. The project requirements were that
+        no confidentiality was allowed while keeping integrity and scalability
+        in mind. To maintain data integrity without confidentiality, data was
+        signed using a user's private key and verified using the public key. My
+        responsibility of this project was to create the frontend with three
+        other project members.
         <br />
         <br />
-        <a class="read-more">Read more</a>
+        <a class="read-more" (click)="openModal(circle)">Read more</a>
       </p>
     </div>
     <div class="col-md-6">
@@ -842,3 +838,126 @@
     />
   </div>
 </div>
+
+<!-- Modals -->
+<!-- Portofolio Modal -->
+<ng-template #portofolio let-modal>
+  <div class="entire-modal">
+    <div class="modalheader">
+      <h4>Portofolio</h4>
+      <button class="close-modal" (click)="modal.dismiss()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          class="bi bi-x-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="modalbody">
+      <label
+        >My Online Portfolio is a website that showcases my creative work as a
+        web developer, graphic designer, and content creator. The primary
+        purpose of this website is to showcase my skills and experience to
+        potential clients, employers, and collaborators.<br /><br />
+        The website will have a clean and modern design, with an intuitive
+        layout that makes it easy for visitors to navigate and explore. The
+        homepage will feature an introduction to my portfolio and a summary of
+        my skills and experience. The portfolio section will be divided into
+        categories, including web development, graphic design, and content
+        creation, with each category featuring a collection of my best work.
+        Each portfolio item will include a brief description, images, and links
+        to the live projects or samples.<br /><br />
+        Additionally, the website will include an about page, where I will share
+        my background, interests, and career objectives. I will also provide
+        contact information on this page, making it easy for potential clients
+        or collaborators to get in touch with me.<br /><br />
+        The website will be built using modern web development technologies such
+        as HTML, CSS, JavaScript, and Bootstrap. It will be optimized for search
+        engines and designed to be responsive, meaning that it will work
+        seamlessly on all devices, including desktop computers, laptops,
+        tablets, and smartphones.<br /><br />
+        In conclusion, My Online Portfolio will be an essential tool for
+        showcasing my creative work and attracting potential clients and
+        collaborators. With its modern design, easy navigation, and responsive
+        layout, it will be a valuable addition to my professional
+        toolkit.</label
+      >
+    </div>
+  </div>
+</ng-template>
+
+<!-- The Circle Modal -->
+<ng-template #circle let-modal>
+  <div class="entire-modal">
+    <div class="modalheader">
+      <h4>The Circle</h4>
+      <button class="close-modal" (click)="modal.dismiss()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          class="bi bi-x-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="modalbody">
+      <label
+        >This project was inspired by the book and film "The Circle" by Dave
+        Eggers. The Circle is a book and film that explores the themes of
+        transparency and online identity. The high-tech company in the story
+        invents a camera called the SeeChange camera that allows people to
+        stream real-time video and a single account system called TruYou that
+        tracks all internet activity. The protagonist of the story becomes
+        transparent by wearing the SeeChange camera and gains millions of
+        followers. The overall message of the story is about the dangers of
+        giving up privacy for the sake of transparency and being constantly
+        watched.<br /><br />
+        This project was composed of three components:<br /><br />
+        - A web platform for watching live streams and interacting with the
+        streamer through chat.<br />
+        - An Android application for starting and stopping streams and reading
+        chat.<br />
+        - A backend server for monitoring streams, storing chat messages and
+        account details.<br /><br />
+        My responsibility of this project was to create the website with three
+        other project members.<br /><br />
+        This project had three major requirements:<br /><br />
+        Confidentiality: Sending encrypted data, with the aim of shielding
+        information from third parties, is not allowed. In other words, no data
+        should be stored in the system that is encrypted with a public key.<br /><br />
+        Integrity: Integrity must be ensured for all data sent.<br /><br />
+        Availability, as a countermeasure against malicious actors, is not a
+        requirement. Following the lean philosophy (no waste), time should not
+        be spent on this. This may seem like a strange choice. For example,
+        transparent individuals can earn points, but we do not need to take
+        countermeasures if malicious actors want to prevent this from happening.
+        However, in a larger perspective, this is not so strange: if there are
+        malicious actors, The Circle Police will get involved and solve the
+        problem with real-world measures. The choice is therefore not to prevent
+        the problem with digital measures, but to solve it with real-world
+        measures (prevention vs resolution). Note that availability in terms of
+        scalability is a requirement.<br /><br />
+        To ensure that the integrity of the data was maintained without
+        confidentiality, we utilized a method of signing all stored data using
+        the user's private key. This allowed other users to verify the data
+        using the public key of the user through the use of RSASSA-PKCS1-v1_5
+        with SHA-256. The message data, which included the date, sender,
+        recipient streamer, and content, was stored as plaintext, as well as a
+        signed hash that could be verified with the sender's public key.</label
+      >
+    </div>
+  </div>
+</ng-template>
