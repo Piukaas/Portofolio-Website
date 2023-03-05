@@ -411,10 +411,7 @@ a.read-more:hover {
   padding: 40px;
 }
 
-/* Modal body will be wider and centered */
 .modalbody {
-  min-width: 1455px;
-  margin-right: 700px;
   margin: 0 auto;
 }
 
