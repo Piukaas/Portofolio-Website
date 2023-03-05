@@ -42,6 +42,7 @@ body {
   border-radius: 100%;
   cursor: pointer;
   transition: 1s;
+  z-index: 100;
 }
 
 .top-button:hover {
@@ -67,6 +68,7 @@ body {
   border-radius: 100%;
   cursor: pointer;
   transition: 1s;
+  z-index: 100;
 }
 
 .theme-button:hover {
@@ -86,8 +88,9 @@ body {
 
 .clear-button {
   position: absolute;
-  left: 47%;
   bottom: 3em;
+  left: 0;
+  right: 0;
   border: 0;
   background-color: transparent;
   cursor: pointer;
@@ -237,13 +240,28 @@ body {
 }
 
 .line-1 {
-  width: 24em;
+  width: 100%;
   margin: 0 auto;
   margin-top: 40px;
   border-right: 2px solid rgb(255, 255, 255);
   white-space: nowrap;
   overflow: hidden;
-  transform: translateY(-50%);
+}
+
+@media (max-width: 550px) {
+  .big-title {
+    font-size: 40px;
+  }
+
+  .line-1 {
+    width: 100%;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-right: 2px solid rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
 
 [theme="dark"] .line-1 {
@@ -388,6 +406,7 @@ a.read-more:hover {
   border-radius: 10px;
   transition: 1s;
   margin-right: 5%;
+  margin-bottom: 10px;
   width: 100%;
   box-shadow: 5px 10px 18px rgb(25, 25, 25);
 }
