@@ -376,7 +376,7 @@ a.source-code:hover svg {
 
 a.read-more:hover {
   color: rgb(25, 25, 25);
-  text-decoration: underline;
+  text-decoration: underline wavy;
   cursor: pointer;
 }
 
