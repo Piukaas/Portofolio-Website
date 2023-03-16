@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from "@angular/core";
+import { Component } from "@angular/core";
 import { ModalService } from "../_services/modal.service";
 
 @Component({
@@ -6,8 +6,6 @@ import { ModalService } from "../_services/modal.service";
   templateUrl: "./projects.component.html",
 })
 export class ProjectsComponent {
-  @ViewChild("portfolio") portfolio: ElementRef | undefined;
-
   is2023 = false;
   is2022 = false;
   is2021 = false;

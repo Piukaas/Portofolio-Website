@@ -121,8 +121,8 @@
           serves as an excellent showcase of my technical abilities and
           dedication to the field of computer science.<br /><br />
           <strong>My Role</strong><br />
-          I was fully responsible for every part of the portfolio website and
-          there were no other people involved.
+          Lead Developer - I was fully responsible for every part of the
+          portfolio website and there were no other people involved.
           <br /><br />
           <strong>Frameworks and Programs</strong><br />
           <ul>
@@ -244,6 +244,69 @@
     />
   </div>
 
+  <ng-template #circle let-modal>
+    <div class="entire-modal">
+      <div class="modalheader">
+        <h4>The Circle</h4>
+        <button class="close-modal" (click)="modal.dismiss()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modalbody">
+        <label>
+          <strong>Project Description</strong><br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          placerat dictum sapien sit amet ultrices. Etiam eget lacinia ligula,
+          id volutpat nibh. Sed gravida feugiat hendrerit. Nam interdum ante a
+          nibh rhoncus, bibendum mollis mi sollicitudin. Nunc facilisis risus a
+          massa dictum, vel scelerisque nibh ullamcorper. Donec eget lacus
+          lorem. Sed aliquam ut neque eget pulvinar. Etiam venenatis ex enim,
+          eget cursus arcu interdum in. Nunc tincidunt nunc efficitur, pharetra
+          ipsum in, eleifend turpis. Nam volutpat erat non ex eleifend aliquam.
+          Aenean at justo maximus, ultrices urna et, facilisis ligula. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula
+          massa, finibus sit amet tincidunt pulvinar, rutrum vitae quam. Morbi
+          vitae metus in massa rhoncus fermentum. Fusce id ante sed ex volutpat
+          finibus vel et augue. Quisque ut iaculis mauris, vel volutpat leo.<br /><br />
+          <strong>My Role</strong><br />
+          Scrum Master - I was responsible for creating the frontend for the web
+          application and I was the scrum master, so I leaded the daily
+          standups.
+          <br /><br />
+          <strong>Frameworks and Programs</strong><br />
+          <ul>
+            <li>Angular</li>
+            <li>Visual Studio Code</li>
+          </ul>
+          <strong>Database</strong><br />
+          <ul>
+            <li>Azure SQL Database</li>
+          </ul>
+          <strong>Programming Languages and Technologies</strong><br />
+          <ul>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>RTMP</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>RTMP</li>
+          </ul>
+        </label>
+      </div>
+    </div>
+  </ng-template>
+
   <div class="row top-padding center-div">
     <div class="col-md-6">
       <img src="../../../assets/data-science.png" class="project-image" />
@@ -280,7 +343,7 @@
         nisi. In eget porttitor orci.
         <br />
         <br />
-        <a class="read-more">Read more</a>
+        <a class="read-more" (click)="openModal(datascience)">Read more</a>
       </p>
     </div>
     <div class="col-md-6"></div>
@@ -296,6 +359,62 @@
       style="margin-top: 20px; width: 70%"
     />
   </div>
+
+  <ng-template #datascience let-modal>
+    <div class="entire-modal">
+      <div class="modalheader">
+        <h4>Data Science - Portofolio</h4>
+        <button class="close-modal" (click)="modal.dismiss()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modalbody">
+        <label>
+          <strong>Project Description</strong><br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          placerat dictum sapien sit amet ultrices. Etiam eget lacinia ligula,
+          id volutpat nibh. Sed gravida feugiat hendrerit. Nam interdum ante a
+          nibh rhoncus, bibendum mollis mi sollicitudin. Nunc facilisis risus a
+          massa dictum, vel scelerisque nibh ullamcorper. Donec eget lacus
+          lorem. Sed aliquam ut neque eget pulvinar. Etiam venenatis ex enim,
+          eget cursus arcu interdum in. Nunc tincidunt nunc efficitur, pharetra
+          ipsum in, eleifend turpis. Nam volutpat erat non ex eleifend aliquam.
+          Aenean at justo maximus, ultrices urna et, facilisis ligula. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula
+          massa, finibus sit amet tincidunt pulvinar, rutrum vitae quam. Morbi
+          vitae metus in massa rhoncus fermentum. Fusce id ante sed ex volutpat
+          finibus vel et augue. Quisque ut iaculis mauris, vel volutpat leo.<br /><br />
+          <strong>My Role</strong><br />
+          Lead Developer - I was fully responsible for every part of the Python
+          portfolio and there were no other people involved.
+          <br /><br />
+          <strong>Frameworks and Programs</strong><br />
+          <ul>
+            <li>Jupyter Notebook</li>
+          </ul>
+          <strong>Database</strong><br />
+          <ul>
+            <li>Online Dataset</li>
+          </ul>
+          <strong>Programming Languages and Technologies</strong><br />
+          <ul>
+            <li>Python</li>
+          </ul>
+        </label>
+      </div>
+    </div>
+  </ng-template>
 
   <div class="row top-padding center-div">
     <div class="content col-md-5 project-description">
@@ -330,7 +449,7 @@
         nisi. In eget porttitor orci.
         <br />
         <br />
-        <a class="read-more">Read more</a>
+        <a class="read-more" (click)="openModal(kramse)">Read more</a>
       </p>
     </div>
     <div class="col-md-6">
@@ -352,6 +471,66 @@
       style="margin-top: 20px; width: 70%"
     />
   </div>
+
+  <ng-template #kramse let-modal>
+    <div class="entire-modal">
+      <div class="modalheader">
+        <h4>Project Kramse</h4>
+        <button class="close-modal" (click)="modal.dismiss()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modalbody">
+        <label>
+          <strong>Project Description</strong><br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          placerat dictum sapien sit amet ultrices. Etiam eget lacinia ligula,
+          id volutpat nibh. Sed gravida feugiat hendrerit. Nam interdum ante a
+          nibh rhoncus, bibendum mollis mi sollicitudin. Nunc facilisis risus a
+          massa dictum, vel scelerisque nibh ullamcorper. Donec eget lacus
+          lorem. Sed aliquam ut neque eget pulvinar. Etiam venenatis ex enim,
+          eget cursus arcu interdum in. Nunc tincidunt nunc efficitur, pharetra
+          ipsum in, eleifend turpis. Nam volutpat erat non ex eleifend aliquam.
+          Aenean at justo maximus, ultrices urna et, facilisis ligula. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula
+          massa, finibus sit amet tincidunt pulvinar, rutrum vitae quam. Morbi
+          vitae metus in massa rhoncus fermentum. Fusce id ante sed ex volutpat
+          finibus vel et augue. Quisque ut iaculis mauris, vel volutpat leo.<br /><br />
+          <strong>My Role</strong><br />
+          Lead Developer - I was fully responsible for every part of
+          datawarehouses and dashboards and there were no other people involved.
+          <br /><br />
+          <strong>Frameworks and Programs</strong><br />
+          <ul>
+            <li>Visual Studio</li>
+            <li>Power BI</li>
+          </ul>
+          <strong>Database</strong><br />
+          <ul>
+            <li>Microsoft SQL</li>
+          </ul>
+          <strong>Programming Languages and Technologies</strong><br />
+          <ul>
+            <li>SQL</li>
+            <li>OLAP</li>
+            <li>MDM</li>
+            <li>DWA</li>
+          </ul>
+        </label>
+      </div>
+    </div>
+  </ng-template>
 </div>
 
 <!-- 2021 Projects -->
@@ -427,7 +606,7 @@
         nisi. In eget porttitor orci.
         <br />
         <br />
-        <a class="read-more">Read more</a>
+        <a class="read-more" (click)="openModal(cmcom)">Read more</a>
       </p>
     </div>
     <div class="col-md-6">
@@ -452,6 +631,70 @@
       style="margin-top: 20px; width: 70%"
     />
   </div>
+
+  <ng-template #cmcom let-modal>
+    <div class="entire-modal">
+      <div class="modalheader">
+        <h4>Stel je Vraag LIVE! - CM.com</h4>
+        <button class="close-modal" (click)="modal.dismiss()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modalbody">
+        <label>
+          <strong>Project Description</strong><br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          placerat dictum sapien sit amet ultrices. Etiam eget lacinia ligula,
+          id volutpat nibh. Sed gravida feugiat hendrerit. Nam interdum ante a
+          nibh rhoncus, bibendum mollis mi sollicitudin. Nunc facilisis risus a
+          massa dictum, vel scelerisque nibh ullamcorper. Donec eget lacus
+          lorem. Sed aliquam ut neque eget pulvinar. Etiam venenatis ex enim,
+          eget cursus arcu interdum in. Nunc tincidunt nunc efficitur, pharetra
+          ipsum in, eleifend turpis. Nam volutpat erat non ex eleifend aliquam.
+          Aenean at justo maximus, ultrices urna et, facilisis ligula. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula
+          massa, finibus sit amet tincidunt pulvinar, rutrum vitae quam. Morbi
+          vitae metus in massa rhoncus fermentum. Fusce id ante sed ex volutpat
+          finibus vel et augue. Quisque ut iaculis mauris, vel volutpat leo.<br /><br />
+          <strong>My Role</strong><br />
+          Scrum Master - I was responsible for creating the front- and backend
+          of the application, I leaded the daily standups and I contacted the
+          stakeholder.
+          <br /><br />
+          <strong>Frameworks and Programs</strong><br />
+          <ul>
+            <li>Angular</li>
+            <li>Node.js</li>
+            <li>Visual Studio Code</li>
+          </ul>
+          <strong>Database</strong><br />
+          <ul>
+            <li>MySQL</li>
+          </ul>
+          <strong>Programming Languages and Technologies</strong><br />
+          <ul>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>WebRTC</li>
+          </ul>
+        </label>
+      </div>
+    </div>
+  </ng-template>
 
   <div class="row top-padding center-div">
     <div class="col-md-6">
@@ -489,7 +732,7 @@
         nisi. In eget porttitor orci.
         <br />
         <br />
-        <a class="read-more">Read more</a>
+        <a class="read-more" (click)="openModal(deadbydaylight)">Read more</a>
       </p>
     </div>
     <div class="col-md-3"></div>
@@ -512,6 +755,69 @@
       style="margin-top: 20px; width: 70%"
     />
   </div>
+
+  <ng-template #deadbydaylight let-modal>
+    <div class="entire-modal">
+      <div class="modalheader">
+        <h4>Dead by Daylight - Client</h4>
+        <button class="close-modal" (click)="modal.dismiss()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modalbody">
+        <label>
+          <strong>Project Description</strong><br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          placerat dictum sapien sit amet ultrices. Etiam eget lacinia ligula,
+          id volutpat nibh. Sed gravida feugiat hendrerit. Nam interdum ante a
+          nibh rhoncus, bibendum mollis mi sollicitudin. Nunc facilisis risus a
+          massa dictum, vel scelerisque nibh ullamcorper. Donec eget lacus
+          lorem. Sed aliquam ut neque eget pulvinar. Etiam venenatis ex enim,
+          eget cursus arcu interdum in. Nunc tincidunt nunc efficitur, pharetra
+          ipsum in, eleifend turpis. Nam volutpat erat non ex eleifend aliquam.
+          Aenean at justo maximus, ultrices urna et, facilisis ligula. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula
+          massa, finibus sit amet tincidunt pulvinar, rutrum vitae quam. Morbi
+          vitae metus in massa rhoncus fermentum. Fusce id ante sed ex volutpat
+          finibus vel et augue. Quisque ut iaculis mauris, vel volutpat leo.<br /><br />
+          <strong>My Role</strong><br />
+          Lead Developer - I was fully responsible for every part of the
+          client-side website and there were no other people involved.
+          <br /><br />
+          <strong>Frameworks and Programs</strong><br />
+          <ul>
+            <li>Angular</li>
+            <li>Neo4j</li>
+            <li>Node.js</li>
+            <li>Visual Studio Code</li>
+          </ul>
+          <strong>Database</strong><br />
+          <ul>
+            <li>MongoDB</li>
+          </ul>
+          <strong>Programming Languages and Technologies</strong><br />
+          <ul>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>JSON</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+          </ul>
+        </label>
+      </div>
+    </div>
+  </ng-template>
 
   <div class="row top-padding center-div">
     <div class="content col-md-5 project-description">
@@ -546,7 +852,7 @@
         nisi. In eget porttitor orci.
         <br />
         <br />
-        <a class="read-more">Read more</a>
+        <a class="read-more" (click)="openModal(fysiotherapie)">Read more</a>
       </p>
     </div>
     <div class="col-md-6">
@@ -570,6 +876,68 @@
       style="margin-top: 20px; width: 70%"
     />
   </div>
+
+  <ng-template #fysiotherapie let-modal>
+    <div class="entire-modal">
+      <div class="modalheader">
+        <h4>Fysiotherapie - Server</h4>
+        <button class="close-modal" (click)="modal.dismiss()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modalbody">
+        <label>
+          <strong>Project Description</strong><br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          placerat dictum sapien sit amet ultrices. Etiam eget lacinia ligula,
+          id volutpat nibh. Sed gravida feugiat hendrerit. Nam interdum ante a
+          nibh rhoncus, bibendum mollis mi sollicitudin. Nunc facilisis risus a
+          massa dictum, vel scelerisque nibh ullamcorper. Donec eget lacus
+          lorem. Sed aliquam ut neque eget pulvinar. Etiam venenatis ex enim,
+          eget cursus arcu interdum in. Nunc tincidunt nunc efficitur, pharetra
+          ipsum in, eleifend turpis. Nam volutpat erat non ex eleifend aliquam.
+          Aenean at justo maximus, ultrices urna et, facilisis ligula. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula
+          massa, finibus sit amet tincidunt pulvinar, rutrum vitae quam. Morbi
+          vitae metus in massa rhoncus fermentum. Fusce id ante sed ex volutpat
+          finibus vel et augue. Quisque ut iaculis mauris, vel volutpat leo.<br /><br />
+          <strong>My Role</strong><br />
+          Lead Developer - I was fully responsible for every part of the
+          server-side website and there were no other people involved.
+          <br /><br />
+          <strong>Frameworks and Programs</strong><br />
+          <ul>
+            <li>ASP.NET Core</li>
+            <li>Azure DevOps</li>
+            <li>Visual Studio</li>
+          </ul>
+          <strong>Database</strong><br />
+          <ul>
+            <li>Azure SQL Database</li>
+          </ul>
+          <strong>Programming Languages and Technologies</strong><br />
+          <ul>
+            <li>C#</li>
+            <li>SQL</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>Onion Architecture</li>
+          </ul>
+        </label>
+      </div>
+    </div>
+  </ng-template>
 
   <div class="row top-padding center-div">
     <div class="col-md-6">
@@ -607,7 +975,7 @@
         nisi. In eget porttitor orci.
         <br />
         <br />
-        <a class="read-more">Read more</a>
+        <a class="read-more" (click)="openModal(seekingsafety)">Read more</a>
       </p>
     </div>
     <div class="col-md-6"></div>
@@ -624,6 +992,63 @@
       style="margin-top: 20px; width: 70%"
     />
   </div>
+
+  <ng-template #seekingsafety let-modal>
+    <div class="entire-modal">
+      <div class="modalheader">
+        <h4>Seeking Safety - KFZ</h4>
+        <button class="close-modal" (click)="modal.dismiss()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modalbody">
+        <label>
+          <strong>Project Description</strong><br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          placerat dictum sapien sit amet ultrices. Etiam eget lacinia ligula,
+          id volutpat nibh. Sed gravida feugiat hendrerit. Nam interdum ante a
+          nibh rhoncus, bibendum mollis mi sollicitudin. Nunc facilisis risus a
+          massa dictum, vel scelerisque nibh ullamcorper. Donec eget lacus
+          lorem. Sed aliquam ut neque eget pulvinar. Etiam venenatis ex enim,
+          eget cursus arcu interdum in. Nunc tincidunt nunc efficitur, pharetra
+          ipsum in, eleifend turpis. Nam volutpat erat non ex eleifend aliquam.
+          Aenean at justo maximus, ultrices urna et, facilisis ligula. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula
+          massa, finibus sit amet tincidunt pulvinar, rutrum vitae quam. Morbi
+          vitae metus in massa rhoncus fermentum. Fusce id ante sed ex volutpat
+          finibus vel et augue. Quisque ut iaculis mauris, vel volutpat leo.<br /><br />
+          <strong>My Role</strong><br />
+          Frontend Developer - I was responsible for designing an Android
+          application along with 9 other developers.
+          <br /><br />
+          <strong>Frameworks and Programs</strong><br />
+          <ul>
+            <li>Android Studio</li>
+          </ul>
+          <strong>Database</strong><br />
+          <ul>
+            <li>Local Storage</li>
+          </ul>
+          <strong>Programming Languages and Technologies</strong><br />
+          <ul>
+            <li>Java</li>
+            <li>XML</li>
+          </ul>
+        </label>
+      </div>
+    </div>
+  </ng-template>
 
   <div class="row top-padding center-div">
     <div class="content col-md-5 project-description">
@@ -658,7 +1083,7 @@
         nisi. In eget porttitor orci.
         <br />
         <br />
-        <a class="read-more">Read more</a>
+        <a class="read-more" (click)="openModal(sameneten)">Read more</a>
       </p>
     </div>
     <div class="col-md-6">
@@ -680,6 +1105,66 @@
       style="margin-top: 20px; width: 70%"
     />
   </div>
+
+  <ng-template #sameneten let-modal>
+    <div class="entire-modal">
+      <div class="modalheader">
+        <h4>Samen Eten - Node.js API</h4>
+        <button class="close-modal" (click)="modal.dismiss()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modalbody">
+        <label>
+          <strong>Project Description</strong><br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          placerat dictum sapien sit amet ultrices. Etiam eget lacinia ligula,
+          id volutpat nibh. Sed gravida feugiat hendrerit. Nam interdum ante a
+          nibh rhoncus, bibendum mollis mi sollicitudin. Nunc facilisis risus a
+          massa dictum, vel scelerisque nibh ullamcorper. Donec eget lacus
+          lorem. Sed aliquam ut neque eget pulvinar. Etiam venenatis ex enim,
+          eget cursus arcu interdum in. Nunc tincidunt nunc efficitur, pharetra
+          ipsum in, eleifend turpis. Nam volutpat erat non ex eleifend aliquam.
+          Aenean at justo maximus, ultrices urna et, facilisis ligula. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula
+          massa, finibus sit amet tincidunt pulvinar, rutrum vitae quam. Morbi
+          vitae metus in massa rhoncus fermentum. Fusce id ante sed ex volutpat
+          finibus vel et augue. Quisque ut iaculis mauris, vel volutpat leo.<br /><br />
+          <strong>My Role</strong><br />
+          Lead Developer - I was fully responsible for every part of the Node.js
+          API and there were no other people involved.
+          <br /><br />
+          <strong>Frameworks and Programs</strong><br />
+          <ul>
+            <li>Node.js</li>
+            <li>Postman</li>
+            <li>Visual Studio Code</li>
+          </ul>
+          <strong>Database</strong><br />
+          <ul>
+            <li>MySQL</li>
+          </ul>
+          <strong>Programming Languages and Technologies</strong><br />
+          <ul>
+            <li>JavaScript</li>
+            <li>JSON</li>
+            <li>SQL</li>
+          </ul>
+        </label>
+      </div>
+    </div>
+  </ng-template>
 
   <div class="row top-padding center-div">
     <div class="col-md-6">
@@ -717,7 +1202,7 @@
         nisi. In eget porttitor orci.
         <br />
         <br />
-        <a class="read-more">Read more</a>
+        <a class="read-more" (click)="openModal(davidetheatre)">Read more</a>
       </p>
     </div>
     <div class="col-md-6"></div>
@@ -734,6 +1219,63 @@
       style="margin-top: 20px; width: 70%"
     />
   </div>
+
+  <ng-template #davidetheatre let-modal>
+    <div class="entire-modal">
+      <div class="modalheader">
+        <h4>Davide Theatre - Android App</h4>
+        <button class="close-modal" (click)="modal.dismiss()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modalbody">
+        <label>
+          <strong>Project Description</strong><br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          placerat dictum sapien sit amet ultrices. Etiam eget lacinia ligula,
+          id volutpat nibh. Sed gravida feugiat hendrerit. Nam interdum ante a
+          nibh rhoncus, bibendum mollis mi sollicitudin. Nunc facilisis risus a
+          massa dictum, vel scelerisque nibh ullamcorper. Donec eget lacus
+          lorem. Sed aliquam ut neque eget pulvinar. Etiam venenatis ex enim,
+          eget cursus arcu interdum in. Nunc tincidunt nunc efficitur, pharetra
+          ipsum in, eleifend turpis. Nam volutpat erat non ex eleifend aliquam.
+          Aenean at justo maximus, ultrices urna et, facilisis ligula. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula
+          massa, finibus sit amet tincidunt pulvinar, rutrum vitae quam. Morbi
+          vitae metus in massa rhoncus fermentum. Fusce id ante sed ex volutpat
+          finibus vel et augue. Quisque ut iaculis mauris, vel volutpat leo.<br /><br />
+          <strong>My Role</strong><br />
+          Frontend Developer - I was responsible for creating the Android
+          application along with 4 other developers.
+          <br /><br />
+          <strong>Frameworks and Programs</strong><br />
+          <ul>
+            <li>Android Studio</li>
+          </ul>
+          <strong>Database</strong><br />
+          <ul>
+            <li>Public API</li>
+          </ul>
+          <strong>Programming Languages and Technologies</strong><br />
+          <ul>
+            <li>Java</li>
+            <li>XML</li>
+          </ul>
+        </label>
+      </div>
+    </div>
+  </ng-template>
 
   <div class="row top-padding center-div">
     <div class="content col-md-5 project-description">
@@ -768,7 +1310,7 @@
         nisi. In eget porttitor orci.
         <br />
         <br />
-        <a class="read-more">Read more</a>
+        <a class="read-more" (click)="openModal(breakingbad)">Read more</a>
       </p>
     </div>
     <div class="col-md-6">
@@ -787,6 +1329,63 @@
       style="margin-top: 20px; width: 70%"
     />
   </div>
+
+  <ng-template #breakingbad let-modal>
+    <div class="entire-modal">
+      <div class="modalheader">
+        <h4>Breaking Bad - Android App</h4>
+        <button class="close-modal" (click)="modal.dismiss()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modalbody">
+        <label>
+          <strong>Project Description</strong><br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          placerat dictum sapien sit amet ultrices. Etiam eget lacinia ligula,
+          id volutpat nibh. Sed gravida feugiat hendrerit. Nam interdum ante a
+          nibh rhoncus, bibendum mollis mi sollicitudin. Nunc facilisis risus a
+          massa dictum, vel scelerisque nibh ullamcorper. Donec eget lacus
+          lorem. Sed aliquam ut neque eget pulvinar. Etiam venenatis ex enim,
+          eget cursus arcu interdum in. Nunc tincidunt nunc efficitur, pharetra
+          ipsum in, eleifend turpis. Nam volutpat erat non ex eleifend aliquam.
+          Aenean at justo maximus, ultrices urna et, facilisis ligula. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula
+          massa, finibus sit amet tincidunt pulvinar, rutrum vitae quam. Morbi
+          vitae metus in massa rhoncus fermentum. Fusce id ante sed ex volutpat
+          finibus vel et augue. Quisque ut iaculis mauris, vel volutpat leo.<br /><br />
+          <strong>My Role</strong><br />
+          Lead Developer - I was fully responsible for every part of the Android
+          application and there were no other people involved.
+          <br /><br />
+          <strong>Frameworks and Programs</strong><br />
+          <ul>
+            <li>Android Studio</li>
+          </ul>
+          <strong>Database</strong><br />
+          <ul>
+            <li>Public API</li>
+          </ul>
+          <strong>Programming Languages and Technologies</strong><br />
+          <ul>
+            <li>Java</li>
+            <li>XML</li>
+          </ul>
+        </label>
+      </div>
+    </div>
+  </ng-template>
 </div>
 
 <!-- 2020 Projects -->
@@ -862,7 +1461,7 @@
         nisi. In eget porttitor orci.
         <br />
         <br />
-        <a class="read-more">Read more</a>
+        <a class="read-more" (click)="openModal(clockbuster)">Read more</a>
       </p>
     </div>
     <div class="col-md-6">
@@ -883,6 +1482,65 @@
       style="margin-top: 20px; width: 70%"
     />
   </div>
+
+  <ng-template #clockbuster let-modal>
+    <div class="entire-modal">
+      <div class="modalheader">
+        <h4>Clockbuster - Webdesign</h4>
+        <button class="close-modal" (click)="modal.dismiss()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modalbody">
+        <label>
+          <strong>Project Description</strong><br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          placerat dictum sapien sit amet ultrices. Etiam eget lacinia ligula,
+          id volutpat nibh. Sed gravida feugiat hendrerit. Nam interdum ante a
+          nibh rhoncus, bibendum mollis mi sollicitudin. Nunc facilisis risus a
+          massa dictum, vel scelerisque nibh ullamcorper. Donec eget lacus
+          lorem. Sed aliquam ut neque eget pulvinar. Etiam venenatis ex enim,
+          eget cursus arcu interdum in. Nunc tincidunt nunc efficitur, pharetra
+          ipsum in, eleifend turpis. Nam volutpat erat non ex eleifend aliquam.
+          Aenean at justo maximus, ultrices urna et, facilisis ligula. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula
+          massa, finibus sit amet tincidunt pulvinar, rutrum vitae quam. Morbi
+          vitae metus in massa rhoncus fermentum. Fusce id ante sed ex volutpat
+          finibus vel et augue. Quisque ut iaculis mauris, vel volutpat leo.<br /><br />
+          <strong>My Role</strong><br />
+          Lead Developer - I was fully responsible for every part of the
+          webdesign and there were no other people involved.
+          <br /><br />
+          <strong>Frameworks and Programs</strong><br />
+          <ul>
+            <li>Bootstrap</li>
+            <li>Visual Studio Code</li>
+          </ul>
+          <strong>Database</strong><br />
+          <ul>
+            <li>N/A</li>
+          </ul>
+          <strong>Programming Languages and Technologies</strong><br />
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+          </ul>
+        </label>
+      </div>
+    </div>
+  </ng-template>
 </div>
 
 <!-- Modals -->
