@@ -212,7 +212,7 @@ body {
 /* Contact Link Buttons */
 .contact-link {
   border: 0;
-  width: 3.75em;
+  width: 4.5%;
   padding: 1em;
   color: rgb(255, 255, 255);
   background-color: rgb(25, 25, 25);
@@ -469,7 +469,7 @@ a.read-more:hover {
 /* Footer */
 .footer-link {
   border: 0;
-  width: 3.75em;
+  width: 14.5%;
   padding: 1em;
   color: rgb(255, 255, 255);
   background-color: rgb(25, 25, 25);
@@ -477,6 +477,7 @@ a.read-more:hover {
   cursor: pointer;
   transition: 1s;
   margin-right: 20px;
+  margin-top: 5px;
 }
 
 [theme="dark"] .contact-footer-button button {
