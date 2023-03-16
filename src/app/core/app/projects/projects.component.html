@@ -61,10 +61,13 @@
         </a>
       </h1>
       <p class="paragraph">
-        My Online Portfolio is a website that showcases my creative work as a
-        web developer, graphic designer, and content creator. The primary
-        purpose of this website is to showcase my skills and experience to
-        potential clients, employers, and collaborators.<br /><br />
+        My portfolio website showcases all of my computer science projects,
+        complete with detailed descriptions and information about the tools and
+        technologies used in each project. Visitors can browse through the
+        portfolio to gain a comprehensive understanding of my skills and
+        experience in the field of computer science. The portfolio website
+        serves as an excellent showcase of my technical abilities and dedication
+        to the field of computer science.<br /><br />
         <a class="read-more" (click)="openModal(portfolio)">Read more</a>
       </p>
     </div>
@@ -86,6 +89,61 @@
       style="margin-top: 20px; width: 70%"
     />
   </div>
+
+  <ng-template #portfolio let-modal>
+    <div class="entire-modal">
+      <div class="modalheader">
+        <h4>Portfolio</h4>
+        <button class="close-modal" (click)="modal.dismiss()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modalbody">
+        <label>
+          <strong>Project Description</strong><br />
+          My portfolio website showcases all of my computer science projects,
+          complete with detailed descriptions and information about the tools
+          and technologies used in each project. Visitors can browse through the
+          portfolio to gain a comprehensive understanding of my skills and
+          experience in the field of computer science. The portfolio website
+          serves as an excellent showcase of my technical abilities and
+          dedication to the field of computer science.<br /><br />
+          <strong>My Role</strong><br />
+          I was fully responsible for every part of the portfolio website and
+          there were no other people involved.
+          <br /><br />
+          <strong>Frameworks</strong><br />
+          <ul>
+            <li>Angular</li>
+          </ul>
+          <br />
+          <strong>Database</strong><br />
+          <ul>
+            <li>N/A</li>
+          </ul>
+          <br />
+          <strong>Programming Languages</strong><br />
+          <ul>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </label>
+      </div>
+    </div>
+  </ng-template>
 </div>
 
 <!-- 2022 Projects -->
@@ -831,57 +889,6 @@
 
 <!-- Modals -->
 <!-- Portfolio Modal -->
-<ng-template #portfolio let-modal>
-  <div class="entire-modal">
-    <div class="modalheader">
-      <h4>Portfolio</h4>
-      <button class="close-modal" (click)="modal.dismiss()">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="currentColor"
-          class="bi bi-x-circle-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
-          />
-        </svg>
-      </button>
-    </div>
-    <div class="modalbody">
-      <label
-        >My Online Portfolio is a website that showcases my creative work as a
-        web developer, graphic designer, and content creator. The primary
-        purpose of this website is to showcase my skills and experience to
-        potential clients, employers, and collaborators.<br /><br />
-        The website will have a clean and modern design, with an intuitive
-        layout that makes it easy for visitors to navigate and explore. The
-        homepage will feature an introduction to my portfolio and a summary of
-        my skills and experience. The portfolio section will be divided into
-        categories, including web development, graphic design, and content
-        creation, with each category featuring a collection of my best work.
-        Each portfolio item will include a brief description, images, and links
-        to the live projects or samples.<br /><br />
-        Additionally, the website will include an about page, where I will share
-        my background, interests, and career objectives. I will also provide
-        contact information on this page, making it easy for potential clients
-        or collaborators to get in touch with me.<br /><br />
-        The website will be built using modern web development technologies such
-        as HTML, CSS, JavaScript, and Bootstrap. It will be optimized for search
-        engines and designed to be responsive, meaning that it will work
-        seamlessly on all devices, including desktop computers, laptops,
-        tablets, and smartphones.<br /><br />
-        In conclusion, My Online Portfolio will be an essential tool for
-        showcasing my creative work and attracting potential clients and
-        collaborators. With its modern design, easy navigation, and responsive
-        layout, it will be a valuable addition to my professional
-        toolkit.</label
-      >
-    </div>
-  </div>
-</ng-template>
 
 <!-- The Circle Modal -->
 <ng-template #circle let-modal>
