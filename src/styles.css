@@ -313,6 +313,7 @@ a.source-code {
 a.source-code:hover svg {
   transition: 1s;
   transform: scale(1.25) rotate(-360deg);
+  cursor: pointer;
 }
 
 /* Projects */
