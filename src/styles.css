@@ -222,21 +222,21 @@ body {
   margin: 20px;
 }
 
-.contact-link a {
+[theme="dark"] .contact-button button {
+  background-color: rgb(255, 255, 255);
+}
+
+.contact-button:hover button {
+  transform: scale(1.25);
+}
+
+.contact-button button svg {
   color: rgb(255, 255, 255);
   transition: 1s;
 }
 
-[theme="dark"] .contact-link {
-  background-color: rgb(255, 255, 255);
-}
-
-[theme="dark"] .contact-link a {
+[theme="dark"] .contact-button button svg {
   color: rgb(25, 25, 25);
-}
-
-.contact-link:hover {
-  transform: scale(1.25);
 }
 
 .line-1 {
@@ -479,19 +479,19 @@ a.read-more:hover {
   margin-right: 20px;
 }
 
-.footer-link a {
+[theme="dark"] .contact-footer-button button {
+  background-color: rgb(255, 255, 255);
+}
+
+.contact-footer-button:hover button {
+  transform: scale(1.1);
+}
+
+.contact-footer-button button svg {
   color: rgb(255, 255, 255);
   transition: 1s;
 }
 
-[theme="dark"] .footer-link {
-  background-color: rgb(255, 255, 255);
-}
-
-[theme="dark"] .footer-link a {
+[theme="dark"] .contact-footer-button button svg {
   color: rgb(25, 25, 25);
-}
-
-.footer-link:hover {
-  transform: scale(1.1);
 }
