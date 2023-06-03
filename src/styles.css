@@ -361,21 +361,87 @@ a.source-code:hover svg {
 }
 
 /* Projects */
+.category-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.category-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
 .category-button {
+  width: 56vh;
+  height: 30vh;
   border: 0;
-  height: 10vh;
   color: rgb(255, 255, 255);
   background-color: rgb(25, 25, 25);
+  box-shadow: 3px 3px 10px rgb(25, 25, 25);
   border-radius: 25px;
   cursor: pointer;
   transition: 1s;
   margin: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
 [theme="dark"] .category-button {
   color: rgb(25, 25, 25);
   background-color: rgb(255, 255, 255);
+}
+
+.category-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.category-button:hover {
+  transform: scale(1.05);
+  transition: 2s;
+}
+
+.category-button:hover::before {
+  opacity: 1;
+}
+
+.category-button.games::before {
+  background-image: url("src/assets/hover/games.png");
+}
+
+.category-button.apps::before {
+  background-image: url("src/assets/hover/apps.png");
+}
+
+.category-button.apis::before {
+  background-image: url("src/assets/hover/apis.png");
+}
+
+.category-button.websites::before {
+  background-image: url("src/assets/hover/websites.png");
+}
+
+.category-button.algorithms::before {
+  background-image: url("src/assets/hover/algorithms.png");
+}
+
+.category-button.data::before {
+  background-image: url("src/assets/hover/data.png");
 }
 
 .year-line {

@@ -23,6 +23,7 @@ import { CMComComponent } from "./core/app/projects/websites/cmcom/cmcom.compone
 import { PortfolioComponent } from "./core/app/projects/websites/portfolio/portfolio.component";
 import { ServerComponent } from "./core/app/projects/websites/server/server.component";
 import { TheCircleComponent } from "./core/app/projects/websites/thecircle/thecircle.component";
+import { YearComponent } from "./core/app/projects/year.component";
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { TheCircleComponent } from "./core/app/projects/websites/thecircle/theci
     DavideTheatreComponent,
     BreakingBadComponent,
     ClockbusterComponent,
+    YearComponent,
   ],
   imports: [
     CommonModule,
