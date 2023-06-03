@@ -1,0 +1,110 @@
+<div class="row top-padding center-div">
+  <div class="content col-md-5 project-description">
+    <h1 class="no-top-margin big-project-title">
+      Fysioterapie - Server
+      <a class="source-code" onclick="window.open('https://drive.filen.io/f/02a316b4-ad27-493e-8ed5-d1e0bf9815e6#PFVzwcvJ40vOUOeA3HQ6zfaiWvMDEApT');">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+          />
+        </svg>
+      </a>
+    </h1>
+    <p class="paragraph">
+      This project aims to develop a web application using ASP.net MVC Core, applying a good application architecture and utilizing an automated development pipeline with unit testing and deployment.
+      The project focuses on creating a practice management system for a new physiotherapy practice that Avans University is opening to support students and employees. The system will be used to
+      manage patient records, appointments, and treatment plans. The development team will demonstrate the application and their design choices during the final assessment.
+      <br />
+      <br />
+      <a class="read-more" (click)="openModal(fysiotherapie)">Read more</a>
+    </p>
+  </div>
+  <div class="col-md-6">
+    <img src="../../../assets/server.png" class="project-image" />
+  </div>
+  <div>
+    <button class="tag">
+      ASP.NET Core
+      <span class="tooltiptext">Framework</span>
+    </button>
+    <button class="tag">
+      Azure DevOps
+      <span class="tooltiptext">CI/CD</span>
+    </button>
+    <button class="tag">
+      Visual Studio
+      <span class="tooltiptext">IDE</span>
+    </button>
+    <span class="vl">|</span>
+    <button class="tag">
+      C#
+      <span class="tooltiptext">Language</span>
+    </button>
+    <button class="tag">
+      SQL
+      <span class="tooltiptext">Language</span>
+    </button>
+    <button class="tag">
+      HTML5
+      <span class="tooltiptext">Language</span>
+    </button>
+    <button class="tag">
+      CSS
+      <span class="tooltiptext">Language</span>
+    </button>
+    <button class="tag">
+      Onion Architecture
+      <span class="tooltiptext">Architecture</span>
+    </button>
+    <span class="vl">|</span>
+    <button class="tag">
+      Full Stack
+      <span class="tooltiptext">Role</span>
+    </button>
+  </div>
+  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
+</div>
+
+<ng-template #fysiotherapie let-modal>
+  <div class="entire-modal">
+    <div class="modalheader">
+      <h4>Fysiotherapie - Server</h4>
+      <button class="close-modal" (click)="modal.dismiss()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="modalbody">
+      <label>
+        <strong>Project Description</strong><br />
+        This project aims to develop a web application using ASP.net MVC Core, applying a good application architecture and utilizing an automated development pipeline with unit testing and
+        deployment. The project focuses on creating a practice management system for a new physiotherapy practice that Avans University is opening to support students and employees. The system will be
+        used to manage patient records, appointments, and treatment plans. The development team will demonstrate the application and their design choices during the final assessment.<br /><br />
+        <strong>My Role</strong><br />
+        Lead Developer - I was fully responsible for every part of the server-side website and there were no other people involved.
+        <br /><br />
+        <strong>Frameworks and Programs</strong><br />
+        <ul>
+          <li>ASP.NET Core</li>
+          <li>Azure DevOps</li>
+          <li>Visual Studio</li>
+        </ul>
+        <strong>Database</strong><br />
+        <ul>
+          <li>Azure SQL Database</li>
+        </ul>
+        <strong>Programming Languages and Technologies</strong><br />
+        <ul>
+          <li>C#</li>
+          <li>SQL</li>
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>Onion Architecture</li>
+        </ul>
+      </label>
+    </div>
+  </div>
+</ng-template>

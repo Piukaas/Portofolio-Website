@@ -1,0 +1,88 @@
+<div class="row top-padding center-div">
+  <div class="col-md-6">
+    <img src="../../../assets/seeking-safety.png" class="project-image" />
+  </div>
+  <div class="content col-md-5 project-description">
+    <h1 class="no-top-margin big-project-title">
+      Seeking Safety - KFZ
+      <a class="source-code" onclick="window.open('https://drive.filen.io/f/2b6bc74d-b4d3-4337-9ce2-382b73cc05d8#GIFm1LNij8II3gkOcwKLegPND7XkcbDu');">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+          <path
+            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+          />
+        </svg>
+      </a>
+    </h1>
+    <p class="paragraph">
+      The Kwaliteit Forensische Zorg (KFZ) project aimed to develop a mobile application called "Seeking Safety" for individuals with addiction problems and/or traumas. The application included the
+      components of the "Seeking Safety, Trauma and Addiction Handbook". The project was developed using Android Studio, a popular integrated development environment (IDE) for Android app development.
+      The app aimed to provide users with easy access to treatment plans for their addiction and trauma-related issues. The project was focused on improving the quality of care provided to individuals
+      struggling with addiction and trauma in the forensic care sector.
+      <br />
+      <br />
+      <a class="read-more" (click)="openModal(seekingsafety)">Read more</a>
+    </p>
+  </div>
+  <div class="col-md-6"></div>
+  <div class="col-md-6">
+    <button class="tag">
+      Android Studio
+      <span class="tooltiptext">IDE</span>
+    </button>
+    <span class="vl">|</span>
+    <button class="tag">
+      Java
+      <span class="tooltiptext">Language</span>
+    </button>
+    <button class="tag">
+      XML
+      <span class="tooltiptext">Language</span>
+    </button>
+    <span class="vl">|</span>
+    <button class="tag">
+      Frontend
+      <span class="tooltiptext">Role</span>
+    </button>
+  </div>
+  <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
+</div>
+
+<ng-template #seekingsafety let-modal>
+  <div class="entire-modal">
+    <div class="modalheader">
+      <h4>Seeking Safety - KFZ</h4>
+      <button class="close-modal" (click)="modal.dismiss()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="modalbody">
+      <label>
+        <strong>Project Description</strong><br />
+        The Kwaliteit Forensische Zorg (KFZ) project aimed to develop a mobile application called "Seeking Safety" for individuals with addiction problems and/or traumas. The application included the
+        components of the "Seeking Safety, Trauma and Addiction Handbook". The project was developed using Android Studio, a popular integrated development environment (IDE) for Android app
+        development. The app aimed to provide users with easy access to treatment plans for their addiction and trauma-related issues. The project was focused on improving the quality of care provided
+        to individuals struggling with addiction and trauma in the forensic care sector.<br /><br />
+        <strong>My Role</strong><br />
+        Frontend Developer - I was responsible for designing an Android application along with 9 other developers.
+        <br /><br />
+        <strong>Frameworks and Programs</strong><br />
+        <ul>
+          <li>Android Studio</li>
+        </ul>
+        <strong>Database</strong><br />
+        <ul>
+          <li>Local Storage</li>
+        </ul>
+        <strong>Programming Languages and Technologies</strong><br />
+        <ul>
+          <li>Java</li>
+          <li>XML</li>
+        </ul>
+      </label>
+    </div>
+  </div>
+</ng-template>

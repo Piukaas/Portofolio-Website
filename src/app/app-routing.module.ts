@@ -1,23 +1,24 @@
-import { NgModule } from '@angular/core'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { RouterModule, Routes } from '@angular/router'
-import { AppComponent } from './core/app/app.component'
-import { DashboardComponent } from './core/app/dashboard/dashboard.component'
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { LayoutComponent } from './core/layout/layout.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { YearComponent } from './pages/projects/year.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent,
+    component: LayoutComponent,
     children: [
       { path: '', pathMatch: 'full', redirectTo: '' },
-      { path: '', component: DashboardComponent }
-    ]
+      { path: '', pathMatch: 'full', component: ProjectsComponent },
+      { path: 'projects', pathMatch: 'full', component: YearComponent },
+    ],
   },
-  { path: '**', redirectTo: '' }
-]
+  { path: '**', redirectTo: '' },
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), BrowserAnimationsModule],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
