@@ -444,6 +444,23 @@ a.source-code:hover svg {
   background-image: url("src/assets/hover/data.png");
 }
 
+.discover {
+  color: rgb(25, 25, 25);
+  margin: 0 0.25rem;
+  padding: 0 0.25rem;
+  margin-bottom: 65px;
+  width: auto;
+  font-size: 2rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.discover:hover {
+  box-shadow: inset 420px 0 0 0 rgb(25, 25, 25);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
 .year-line {
   width: 50%;
   margin: 0 auto;

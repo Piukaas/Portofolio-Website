@@ -13,15 +13,6 @@ export class ProjectsComponent {
   constructor(private router: Router) {}
 
   scrollNextView() {
-    const nextViewElement = this.nextViewRef.nativeElement;
-    if (nextViewElement) {
-      nextViewElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-
-  allProjects() {
-    this.router.navigate(['/projects']);
-
     this.router.events
       .pipe(
         filter((event) => event instanceof NavigationEnd),
@@ -31,6 +22,19 @@ export class ProjectsComponent {
         this.scrollNextView();
       });
 
+    const nextViewElement = this.nextViewRef.nativeElement;
+    if (nextViewElement) {
+      nextViewElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  allProjects() {
+    this.router.navigate(['/projects']);
+    this.scrollNextView();
+  }
+
+  appProjects() {
+    this.router.navigate(['/projects/apps']);
     this.scrollNextView();
   }
 }

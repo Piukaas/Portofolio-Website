@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './core/layout/layout.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { AllProjectsComponent } from './pages/allprojects/allprojects.component';
+import { AppProjectsComponent } from './pages/appprojects/appprojects.component';
 
 const routes: Routes = [
   {
@@ -10,8 +11,12 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       { path: '', pathMatch: 'full', redirectTo: '' },
-      { path: '', pathMatch: 'full', component: ProjectsComponent },
-      { path: 'projects', pathMatch: 'full', component: AllProjectsComponent },
+      { path: '', component: ProjectsComponent },
+      { path: 'projects', component: AllProjectsComponent },
+      {
+        path: 'projects/apps',
+        component: AppProjectsComponent,
+      },
     ],
   },
   { path: '**', redirectTo: '' },

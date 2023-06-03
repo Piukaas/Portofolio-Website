@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './core/dashboard/dashboard.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { LayoutComponent } from './core/layout/layout.component';
+import { AllProjectsComponent } from './pages/allprojects/allprojects.component';
+import { AppProjectsComponent } from './pages/appprojects/appprojects.component';
 import { SamenEtenComponent } from './pages/projects/apis/sameneten/sameneten.component';
 import { BreakingBadComponent } from './pages/projects/apps/breakingbad/breakingbad.component';
 import { DavideTheatreComponent } from './pages/projects/apps/davidetheatre/davidetheatre.component';
@@ -24,7 +26,6 @@ import { CMComComponent } from './pages/projects/websites/cmcom/cmcom.component'
 import { PortfolioComponent } from './pages/projects/websites/portfolio/portfolio.component';
 import { ServerComponent } from './pages/projects/websites/server/server.component';
 import { TheCircleComponent } from './pages/projects/websites/thecircle/thecircle.component';
-import { AllProjectsComponent } from './pages/allprojects/allprojects.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { AllProjectsComponent } from './pages/allprojects/allprojects.component'
     DavideTheatreComponent,
     BreakingBadComponent,
     ClockbusterComponent,
+    AppProjectsComponent,
   ],
   imports: [
     CommonModule,

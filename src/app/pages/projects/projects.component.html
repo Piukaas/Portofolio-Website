@@ -53,7 +53,7 @@
     </button>
 
     <!-- Mobile Applications -->
-    <button class="category-button apps col-md-6">
+    <button class="category-button apps col-md-6" (click)="appProjects()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -107,9 +107,7 @@
       <h2>Algorithms</h2>
     </button>
 
-    <a class="center-text read-more" (click)="allProjects()"
-      >Discover all projects</a
-    >
+    <a class="discover" (click)="allProjects()">Discover all projects...</a>
   </div>
   <div #nextView></div>
 </div>
