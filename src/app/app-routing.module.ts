@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './core/layout/layout.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { YearComponent } from './pages/projects/year.component';
+import { AllProjectsComponent } from './pages/allprojects/allprojects.component';
 
 const routes: Routes = [
   {
@@ -11,7 +11,7 @@ const routes: Routes = [
     children: [
       { path: '', pathMatch: 'full', redirectTo: '' },
       { path: '', pathMatch: 'full', component: ProjectsComponent },
-      { path: 'projects', pathMatch: 'full', component: YearComponent },
+      { path: 'projects', pathMatch: 'full', component: AllProjectsComponent },
     ],
   },
   { path: '**', redirectTo: '' },

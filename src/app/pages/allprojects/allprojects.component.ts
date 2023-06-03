@@ -1,10 +1,10 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "app-year",
-  templateUrl: "./year.component.html",
+  selector: 'app-allprojects',
+  templateUrl: './allprojects.component.html',
 })
-export class YearComponent {
+export class AllProjectsComponent {
   is2023 = false;
   is2022 = false;
   is2021 = false;

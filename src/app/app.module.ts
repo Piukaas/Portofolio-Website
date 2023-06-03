@@ -24,7 +24,7 @@ import { CMComComponent } from './pages/projects/websites/cmcom/cmcom.component'
 import { PortfolioComponent } from './pages/projects/websites/portfolio/portfolio.component';
 import { ServerComponent } from './pages/projects/websites/server/server.component';
 import { TheCircleComponent } from './pages/projects/websites/thecircle/thecircle.component';
-import { YearComponent } from './pages/projects/year.component';
+import { AllProjectsComponent } from './pages/allprojects/allprojects.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { YearComponent } from './pages/projects/year.component';
     FooterComponent,
     LayoutComponent,
     ProjectsComponent,
-    YearComponent,
+    AllProjectsComponent,
     PortfolioComponent,
     TheCircleComponent,
     DataScienceComponent,
