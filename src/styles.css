@@ -361,6 +361,23 @@ a.source-code:hover svg {
 }
 
 /* Projects */
+
+.category-button {
+  border: 0;
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 25, 25);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 1s;
+  margin: 10px;
+}
+
+[theme="dark"] .category-button {
+  color: rgb(25, 25, 25);
+  background-color: rgb(255, 255, 255);
+}
+
 .year-line {
   width: 50%;
   margin: 0 auto;
@@ -512,8 +529,7 @@ a.read-more:hover {
 
 /* Animation */
 .anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 750ms steps(44) infinite normal;
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 750ms steps(44) infinite normal;
 }
 
 @keyframes typewriter {

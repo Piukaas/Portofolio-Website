@@ -9,8 +9,20 @@ import { LocalStorageModule } from "angular-2-local-storage-encrypt";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./core/app/app.component";
 import { DashboardComponent } from "./core/app/dashboard/dashboard.component";
-import { ProjectsComponent } from "./core/app/projects/projects.component";
 import { FooterComponent } from "./core/app/footer/footer.component";
+import { SamenEtenComponent } from "./core/app/projects/apis/sameneten/sameneten.component";
+import { BreakingBadComponent } from "./core/app/projects/apps/breakingbad/breakingbad.component";
+import { DavideTheatreComponent } from "./core/app/projects/apps/davidetheatre/davidetheatre.component";
+import { SeekingSafetyComponent } from "./core/app/projects/apps/seekingsafety/seekingsafety.component";
+import { DataScienceComponent } from "./core/app/projects/data/datascience/datascience.component";
+import { KramseComponent } from "./core/app/projects/data/kramse/kramse.component";
+import { ProjectsComponent } from "./core/app/projects/projects.component";
+import { ClientComponent } from "./core/app/projects/websites/client/client.component";
+import { ClockbusterComponent } from "./core/app/projects/websites/clockbuster/clockbuster.component";
+import { CMComComponent } from "./core/app/projects/websites/cmcom/cmcom.component";
+import { PortfolioComponent } from "./core/app/projects/websites/portfolio/portfolio.component";
+import { ServerComponent } from "./core/app/projects/websites/server/server.component";
+import { TheCircleComponent } from "./core/app/projects/websites/thecircle/thecircle.component";
 
 @NgModule({
   declarations: [
@@ -18,6 +30,18 @@ import { FooterComponent } from "./core/app/footer/footer.component";
     DashboardComponent,
     ProjectsComponent,
     FooterComponent,
+    PortfolioComponent,
+    TheCircleComponent,
+    DataScienceComponent,
+    KramseComponent,
+    CMComComponent,
+    ClientComponent,
+    ServerComponent,
+    SeekingSafetyComponent,
+    SamenEtenComponent,
+    DavideTheatreComponent,
+    BreakingBadComponent,
+    ClockbusterComponent,
   ],
   imports: [
     CommonModule,
