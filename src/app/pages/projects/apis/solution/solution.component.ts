@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { ModalService } from '../../../_services/modal.service';
 
 @Component({
-  selector: 'app-breakingbad',
-  templateUrl: './breakingbad.component.html',
+  selector: 'app-solution',
+  templateUrl: './solution.component.html',
 })
-export class BreakingBadComponent {
+export class SolutionComponent {
   constructor(private modalService: ModalService) {}
 
   openModal(el: any) {

@@ -1,10 +1,13 @@
 <div class="row top-padding center-div">
+  <div class="col-md-6">
+    <img src="../../../assets/ai.png" class="project-image" />
+  </div>
   <div class="content col-md-5 project-description">
     <h1 class="no-top-margin big-project-title">
-      The Circle
+      AI - Dominoes and Recognition
       <a
         class="source-code"
-        onclick="window.open('https://drive.filen.io/f/8a461ecf-f89c-4929-b1e5-e59a31603089#DOPyF9V64OcS7gXPjfa9KGGKFN0GZUql')"
+        onclick="window.open('https://drive.filen.io/f/cf4110c6-3bcc-4ff9-a7cb-ae98377dcb55#KuuBtLS3YDbkq5c2vHbsX4lx61TtRFgR');"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,24 +24,29 @@
       </a>
     </h1>
     <p class="paragraph">
-      Inspired by "The Circle" by Dave Eggers, our project had three components:
-      a web platform for live streams and chat, an Android app for streaming and
-      chat, and a backend server. Confidentiality was not allowed, so data was
-      stored in plaintext and signed with a private key. RSASSA-PKCS1-v1_5 with
-      SHA-256 was used for verification using the public key. Availability was
-      not a concern, and scalability was a requirement. Our project team of four
-      created the website for the live streams.
+      Appendix C requires creating a Dominoes game where an AI can be added.
+      Three steps are involved: writing a generic domino engine, creating an
+      adversary using a minimax algorithm, and playing without knowing the
+      opponent's tiles. Appendix F requires developing an artificial neural
+      network to recognize handwritten digits using the MNIST dataset. Different
+      network topologies and input parameters are experimented with to see their
+      effect. AUROC is the suggested evaluation function. Parameters include
+      (hidden) layers, perceptrons, and activation function. Results are
+      documented and explained.
       <br />
       <br />
-      <a class="read-more" (click)="openModal(circle)">Read more</a>
+      <a class="read-more" (click)="openModal(ai)">Read more</a>
     </p>
   </div>
-  <div class="col-md-6">
-    <img src="../../../assets/circle.png" class="project-image" />
-  </div>
-  <div>
+  <div class="col-md-5"></div>
+  <div class="col-md-7">
     <button class="tag">
-      Angular<span class="tooltiptext">Framework</span>
+      Tensorflow
+      <span class="tooltiptext">Library</span>
+    </button>
+    <button class="tag">
+      Artificial Intelligence
+      <span class="tooltiptext">AI</span>
     </button>
     <button class="tag">
       Visual Studio Code
@@ -46,38 +54,22 @@
     </button>
     <span class="vl">|</span>
     <button class="tag">
-      TypeScript
-      <span class="tooltiptext">Language</span>
-    </button>
-    <button class="tag">
       JavaScript
       <span class="tooltiptext">Language</span>
     </button>
-    <button class="tag">
-      HTML5
-      <span class="tooltiptext">Language</span>
-    </button>
-    <button class="tag">
-      CSS
-      <span class="tooltiptext">Language</span>
-    </button>
-    <button class="tag">
-      RTMP
-      <span class="tooltiptext">Protocol</span>
-    </button>
     <span class="vl">|</span>
     <button class="tag">
-      Frontend
+      Backend
       <span class="tooltiptext">Role</span>
     </button>
   </div>
   <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
 </div>
 
-<ng-template #circle let-modal>
+<ng-template #ai let-modal>
   <div class="entire-modal">
     <div class="modalheader">
-      <h4>The Circle</h4>
+      <h4>AI - Dominoes and Recognition</h4>
       <button class="close-modal" (click)="modal.dismiss()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -96,34 +88,32 @@
     <div class="modalbody">
       <label>
         <strong>Project Description</strong><br />
-        Inspired by "The Circle" by Dave Eggers, our project had three
-        components: a web platform for live streams and chat, an Android app for
-        streaming and chat, and a backend server. Confidentiality was not
-        allowed, so data was stored in plaintext and signed with a private key.
-        RSASSA-PKCS1-v1_5 with SHA-256 was used for verification using the
-        public key. Availability was not a concern, and scalability was a
-        requirement. Our project team of four created the website for the live
-        streams.<br /><br />
+        Appendix C requires creating a Dominoes game where an AI can be added.
+        Three steps are involved: writing a generic domino engine, creating an
+        adversary using a minimax algorithm, and playing without knowing the
+        opponent's possession. The optional challenge is to apply the same
+        principles to a game like chess. Appendix F requires developing an
+        artificial neural network to recognize handwritten digits using the
+        MNIST dataset. Different network topologies and input parameters are
+        experimented with to see their effect. AUROC is the suggested evaluation
+        function. Parameters include (hidden) layers, perceptrons, and
+        activation function. Results are documented and explained.<br /><br />
         <strong>My Role</strong><br />
-        Scrum Master - I was responsible for creating the frontend for the web
-        application and I was the scrum master, so I leaded the daily standups.
+        Backend Developer - I was responsible for creating the algorithm and
+        training the neural network with my project partner.
         <br /><br />
         <strong>Frameworks and Programs</strong><br />
         <ul>
-          <li>Angular</li>
+          <li>Tensorflow</li>
           <li>Visual Studio Code</li>
         </ul>
         <strong>Database</strong><br />
         <ul>
-          <li>Azure SQL Database</li>
+          <li>N/A</li>
         </ul>
         <strong>Programming Languages and Technologies</strong><br />
         <ul>
-          <li>TypeScript</li>
           <li>JavaScript</li>
-          <li>RTMP</li>
-          <li>HTML5</li>
-          <li>CSS</li>
         </ul>
       </label>
     </div>

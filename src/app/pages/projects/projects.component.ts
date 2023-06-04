@@ -33,8 +33,33 @@ export class ProjectsComponent {
     this.scrollNextView();
   }
 
+  websiteProjects() {
+    this.router.navigate(['/projects/websites']);
+    this.scrollNextView();
+  }
+
+  apiProjects() {
+    this.router.navigate(['/projects/apis']);
+    this.scrollNextView();
+  }
+
+  dataProjects() {
+    this.router.navigate(['/projects/data']);
+    this.scrollNextView();
+  }
+
   appProjects() {
     this.router.navigate(['/projects/apps']);
+    this.scrollNextView();
+  }
+
+  gameProjects() {
+    this.router.navigate(['/projects/games']);
+    this.scrollNextView();
+  }
+
+  algorithmProjects() {
+    this.router.navigate(['/projects/algorithms']);
     this.scrollNextView();
   }
 }
