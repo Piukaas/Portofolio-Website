@@ -25,9 +25,11 @@ import { DavideTheatreComponent } from './pages/projects/apps/davidetheatre/davi
 import { SeekingSafetyComponent } from './pages/projects/apps/seekingsafety/seekingsafety.component';
 import { DataScienceComponent } from './pages/projects/data/datascience/datascience.component';
 import { KramseComponent } from './pages/projects/data/kramse/kramse.component';
+import { GameJamComponent } from './pages/projects/games/game-jam/jam.component';
 import { GhostComponent } from './pages/projects/games/ghost-runner/ghost.component';
 import { MazeComponent } from './pages/projects/games/guarded-maze/maze.component';
 import { BallComponent } from './pages/projects/games/roll-a-ball/ball.component';
+import { ShapeComponent } from './pages/projects/games/shape-shooter/shape.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ClientComponent } from './pages/projects/websites/client/client.component';
 import { ClockbusterComponent } from './pages/projects/websites/clockbuster/clockbuster.component';
@@ -36,7 +38,6 @@ import { PortfolioComponent } from './pages/projects/websites/portfolio/portfoli
 import { ServerComponent } from './pages/projects/websites/server/server.component';
 import { TheCircleComponent } from './pages/projects/websites/thecircle/thecircle.component';
 import { WebsiteProjectsComponent } from './pages/websiteprojects/websiteprojects.component';
-import { ShapeComponent } from './pages/projects/games/shape-shooter/shape.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { ShapeComponent } from './pages/projects/games/shape-shooter/shape.compo
     MazeComponent,
     GhostComponent,
     ShapeComponent,
+    GameJamComponent,
   ],
   imports: [
     CommonModule,
