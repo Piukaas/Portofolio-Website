@@ -29,6 +29,7 @@ import { GameJamComponent } from './pages/projects/games/game-jam/jam.component'
 import { GhostComponent } from './pages/projects/games/ghost-runner/ghost.component';
 import { MazeComponent } from './pages/projects/games/guarded-maze/maze.component';
 import { BallComponent } from './pages/projects/games/roll-a-ball/ball.component';
+import { SeriousGameComponent } from './pages/projects/games/serious-game/serious.component';
 import { ShapeComponent } from './pages/projects/games/shape-shooter/shape.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ClientComponent } from './pages/projects/websites/client/client.component';
@@ -72,6 +73,7 @@ import { WebsiteProjectsComponent } from './pages/websiteprojects/websiteproject
     GhostComponent,
     ShapeComponent,
     GameJamComponent,
+    SeriousGameComponent,
   ],
   imports: [
     CommonModule,
