@@ -34,32 +34,44 @@ export class ProjectsComponent {
   }
 
   websiteProjects() {
-    this.router.navigate(['/projects/websites']);
+    this.router.navigate(['/projects/category'], {
+      queryParams: { type: 'Website' },
+    });
     this.scrollNextView();
   }
 
   apiProjects() {
-    this.router.navigate(['/projects/apis']);
+    this.router.navigate(['/projects/category'], {
+      queryParams: { type: 'API' },
+    });
     this.scrollNextView();
   }
 
   dataProjects() {
-    this.router.navigate(['/projects/data']);
+    this.router.navigate(['/projects/category'], {
+      queryParams: { type: 'Data' },
+    });
     this.scrollNextView();
   }
 
   appProjects() {
-    this.router.navigate(['/projects/apps']);
+    this.router.navigate(['/projects/category'], {
+      queryParams: { type: 'Mobile' },
+    });
     this.scrollNextView();
   }
 
   gameProjects() {
-    this.router.navigate(['/projects/games']);
+    this.router.navigate(['/projects/category'], {
+      queryParams: { type: 'Game' },
+    });
     this.scrollNextView();
   }
 
   algorithmProjects() {
-    this.router.navigate(['/projects/algorithms']);
+    this.router.navigate(['/projects/category'], {
+      queryParams: { type: 'Algorithm' },
+    });
     this.scrollNextView();
   }
 }

@@ -1,0 +1,7 @@
+<project
+  *ngFor="let project of projects$ | async; let i = index"
+  [project]="project"
+  [layout]="i % 2 === 0 ? 'even' : 'odd'"
+></project>
+
+<app-footer></app-footer>

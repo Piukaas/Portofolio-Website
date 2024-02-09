@@ -34,15 +34,11 @@
 <hr class="year-line bottom-padding" />
 
 <div [hidden]="is2023">
-  <app-serious></app-serious>
-  <app-jam></app-jam>
-  <app-shape></app-shape>
-  <app-ghost></app-ghost>
-  <app-maze></app-maze>
-  <app-ball></app-ball>
-  <app-solution></app-solution>
-  <app-ai></app-ai>
-  <app-portfolio></app-portfolio>
+  <project
+    *ngFor="let project of groupedProjects[2023]; let i = index"
+    [project]="project"
+    [layout]="i % 2 === 0 ? 'even' : 'odd'"
+  ></project>
 </div>
 
 <!-- 2022 Projects -->
@@ -81,9 +77,11 @@
 <hr class="year-line bottom-padding" />
 
 <div [hidden]="is2022">
-  <app-thecircle></app-thecircle>
-  <app-datascience></app-datascience>
-  <app-kramse></app-kramse>
+  <project
+    *ngFor="let project of groupedProjects[2022]; let i = index"
+    [project]="project"
+    [layout]="i % 2 === 0 ? 'even' : 'odd'"
+  ></project>
 </div>
 
 <!-- 2021 Projects -->
@@ -122,13 +120,11 @@
 <hr class="year-line bottom-padding" />
 
 <div [hidden]="is2021">
-  <app-cmcom></app-cmcom>
-  <app-client></app-client>
-  <app-server></app-server>
-  <app-seekingsafety></app-seekingsafety>
-  <app-sameneten></app-sameneten>
-  <app-davidetheatre></app-davidetheatre>
-  <app-breakingbad></app-breakingbad>
+  <project
+    *ngFor="let project of groupedProjects[2021]; let i = index"
+    [project]="project"
+    [layout]="i % 2 === 0 ? 'even' : 'odd'"
+  ></project>
 </div>
 
 <!-- 2020 Projects -->
@@ -167,7 +163,11 @@
 <hr class="year-line bottom-padding" />
 
 <div [hidden]="is2020">
-  <app-clockbuster></app-clockbuster>
+  <project
+    *ngFor="let project of groupedProjects[2020]; let i = index"
+    [project]="project"
+    [layout]="i % 2 === 0 ? 'even' : 'odd'"
+  ></project>
 </div>
 
 <app-footer></app-footer>
