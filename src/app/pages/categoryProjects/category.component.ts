@@ -15,7 +15,7 @@ export class CategoryProjectsComponent implements OnInit {
   constructor(private http: HttpClient, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.route.queryParams.subscribe((params) => {
+    this.route.queryParams.subscribe((params: any) => {
       this.type = params['type'];
 
       this.projects$ = this.http.get('assets/json/projects.json').pipe(
