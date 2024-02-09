@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './core/layout/layout.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { AllProjectsComponent } from './pages/allProjects/allprojects.component';
-import { CategoryProjectsComponent } from './pages/categoryProjects/category.component';
+import { AllProjectsComponent } from './pages/allprojects/allprojects.component';
+import { CategoryProjectsComponent } from './pages/categoryprojects/category.component';
 
 const routes: Routes = [
   {
