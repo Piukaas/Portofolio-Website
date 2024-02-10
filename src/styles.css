@@ -253,6 +253,7 @@ i.icon-button {
 
 /* Full Page */
 .full-page {
+  position: relative;
   height: 100vh;
 }
 
@@ -447,15 +448,24 @@ a.source-code:hover i {
 
 .content-left {
   justify-content: left;
+  align-items: left;
+  text-align: left;
 }
 
 .content-right {
   justify-content: right;
+  align-items: right;
+  text-align: right;
 }
 
 .content-center {
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.content-bottom {
+  bottom: 0;
 }
 
 .category-button {
