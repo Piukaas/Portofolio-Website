@@ -176,7 +176,6 @@
     "ides": ["Visual Studio Code"],
     "languages": [
       { "name": "TypeScript", "icon": "" },
-      { "name": "JavaScript", "icon": "js" },
       { "name": "HTML5", "icon": "html5" },
       { "name": "CSS", "icon": "css3-alt" },
       { "name": "JSON", "icon": "" }

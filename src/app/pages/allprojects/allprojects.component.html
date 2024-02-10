@@ -1,18 +1,69 @@
-<app-year-projects
-  [year]="2023"
-  [projects]="groupedProjects?.[2023]"
-></app-year-projects>
-<app-year-projects
-  [year]="2022"
-  [projects]="groupedProjects?.[2022]"
-></app-year-projects>
-<app-year-projects
-  [year]="2021"
-  [projects]="groupedProjects?.[2021]"
-></app-year-projects>
-<app-year-projects
-  [year]="2020"
-  [projects]="groupedProjects?.[2020]"
-></app-year-projects>
+<div class="row content-right">
+  <!-- Sorting dropdown -->
+  <div class="col-md-3">
+    <label for="sort">Sort by:</label>
+    <select id="sort" class="form-control" [(ngModel)]="sort">
+      <option value="year" selected>Year</option>
+      <option value="alphabetical">Alphabetical (A-Z)</option>
+    </select>
+  </div>
+
+  <!-- Search bar -->
+  <!-- <div class="col-md-3">
+    <label for="search">Search:</label>
+    <input
+      class="form-control"
+      id="search"
+      type="text"
+      placeholder="Search by title or description"
+    />
+  </div> -->
+
+  <!-- Programming language dropdown -->
+  <!-- <div class="col-md-3">
+    <label for="language">Programming Language:</label>
+    <select id="language" class="form-control">
+      <option disabled selected>0</option>
+    </select>
+  </div> -->
+
+  <!-- Frontend/Backend dropdown -->
+  <!-- <div class="col-md-3">
+    <label for="type">Development role:</label>
+    <select id="type" class="form-control">
+      <option value="frontend">Frontend</option>
+      <option value="backend">Backend</option>
+      <option value="full-stack">Full stack</option>
+    </select>
+  </div> -->
+</div>
+<!-- <hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" /> -->
+
+<div *ngIf="sort === 'year'; else alphabetically">
+  <app-year-projects
+    [year]="2023"
+    [projects]="yearProjects?.[2023]"
+  ></app-year-projects>
+  <app-year-projects
+    [year]="2022"
+    [projects]="yearProjects?.[2022]"
+  ></app-year-projects>
+  <app-year-projects
+    [year]="2021"
+    [projects]="yearProjects?.[2021]"
+  ></app-year-projects>
+  <app-year-projects
+    [year]="2020"
+    [projects]="yearProjects?.[2020]"
+  ></app-year-projects>
+</div>
+
+<ng-template #alphabetically>
+  <app-project
+    *ngFor="let project of sortedProjects; let i = index"
+    [project]="project"
+    [layout]="i % 2 === 0 ? 'even' : 'odd'"
+  ></app-project>
+</ng-template>
 
 <app-footer></app-footer>

@@ -9,7 +9,9 @@ import { map } from 'rxjs/operators';
 })
 export class AllProjectsComponent implements OnInit {
   projects$: Observable<any> = of();
-  groupedProjects: any;
+  yearProjects: any;
+  sortedProjects: any;
+  sort: string = 'year';
 
   constructor(private http: HttpClient) {}
 
@@ -17,17 +19,25 @@ export class AllProjectsComponent implements OnInit {
     this.projects$ = this.http.get('assets/json/projects.json');
     this.projects$
       .pipe(
-        map((projects) =>
-          projects.reduce((groups: any, project: any) => {
+        map((projects: any[]) => {
+          // Group projects by year
+          const yearProjects = projects.reduce((groups: any, project: any) => {
             const year = project.year;
             if (!groups[year]) {
               groups[year] = [];
             }
             groups[year].push(project);
             return groups;
-          }, {})
-        )
+          }, {});
+
+          // Sort all projects alphabetically (A-Z)
+          this.sortedProjects = [...projects].sort((a, b) =>
+            a.title.localeCompare(b.title)
+          );
+
+          return yearProjects;
+        })
       )
-      .subscribe((groupedProjects) => (this.groupedProjects = groupedProjects));
+      .subscribe((yearProjects) => (this.yearProjects = yearProjects));
   }
 }
