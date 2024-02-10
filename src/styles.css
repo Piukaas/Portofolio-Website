@@ -384,6 +384,10 @@ a.source-code:hover svg {
   justify-content: left;
 }
 
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .category-container {
   height: 100%;
   display: flex;
