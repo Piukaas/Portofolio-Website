@@ -39,4 +39,9 @@ export class ProjectsComponent {
     });
     this.scrollNextView();
   }
+
+  navigateToGames() {
+    this.router.navigate(['/games']);
+    this.scrollNextView();
+  }
 }

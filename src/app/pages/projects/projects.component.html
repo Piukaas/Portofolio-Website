@@ -1,7 +1,7 @@
 <div class="category-container container">
   <div class="row content-center">
+    <!-- Websites -->
     <div class="col-md-3">
-      <!-- Websites -->
       <button
         class="category-button websites"
         (click)="navigateToProjects('Website')"
@@ -11,24 +11,24 @@
       </button>
     </div>
 
+    <!-- API Projects -->
     <div class="col-md-3">
-      <!-- API Projects -->
       <button class="category-button apis" (click)="navigateToProjects('API')">
         <i class="fa-solid fa-2xl fa-upload icon-button"></i>
         <h3>APIs</h3>
       </button>
     </div>
 
+    <!-- Data Projects -->
     <div class="col-md-3">
-      <!-- Data Projects -->
       <button class="category-button data" (click)="navigateToProjects('Data')">
         <i class="fa-solid fa-2xl fa-database icon-button"></i>
         <h3>Data Projects</h3>
       </button>
     </div>
 
+    <!-- Mobile Applications -->
     <div class="col-md-3">
-      <!-- Mobile Applications -->
       <button
         class="category-button apps"
         (click)="navigateToProjects('Mobile')"
@@ -38,8 +38,8 @@
       </button>
     </div>
 
+    <!-- Games -->
     <div class="col-md-3">
-      <!-- Games -->
       <button
         class="category-button games"
         (click)="navigateToProjects('Game')"
@@ -49,8 +49,8 @@
       </button>
     </div>
 
+    <!-- Algorithms -->
     <div class="col-md-3">
-      <!-- Algorithms -->
       <button
         class="category-button algorithms"
         (click)="navigateToProjects('Algorithm')"
@@ -60,14 +60,22 @@
       </button>
     </div>
 
+    <!-- Internships -->
     <div class="col-md-3">
-      <!-- Internships -->
       <button
         class="category-button internships"
         (click)="navigateToProjects('Internship')"
       >
         <i class="fa-solid fa-2xl fa-briefcase icon-button"></i>
         <h3>Internships</h3>
+      </button>
+    </div>
+
+    <!-- Gaming -->
+    <div class="col-md-3">
+      <button class="category-button rockpaper" (click)="navigateToGames()">
+        <i class="fa-solid fa-2xl fa-dice icon-button"></i>
+        <h3>Play some games</h3>
       </button>
     </div>
 

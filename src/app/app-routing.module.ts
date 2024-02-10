@@ -4,6 +4,7 @@ import { LayoutComponent } from './core/layout/layout.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { AllProjectsComponent } from './pages/allprojects/allprojects.component';
 import { CategoryProjectsComponent } from './pages/categoryprojects/category.component';
+import { GamesComponent } from './pages/games/games.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,7 @@ const routes: Routes = [
     children: [
       { path: '', pathMatch: 'full', redirectTo: '' },
       { path: '', component: ProjectsComponent },
+      { path: 'games', component: GamesComponent },
       { path: 'projects', component: AllProjectsComponent },
       { path: 'projects/category', component: CategoryProjectsComponent },
     ],

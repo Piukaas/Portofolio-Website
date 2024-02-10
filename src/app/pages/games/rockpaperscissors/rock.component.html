@@ -1,0 +1,90 @@
+<div class="row top-padding">
+  <h1 class="no-top-margin big-project-title">Rock, paper, scissors</h1>
+  <div class="col-md-2">
+    <button
+      [ngClass]="animationsPlaying ? 'game-button-disabled' : 'game-button'"
+      (click)="move('gem')"
+      [disabled]="animationsPlaying"
+    >
+      <h1 class="fa fa-hand-back-fist fa-xxl icon-button"></h1>
+    </button>
+
+    <button
+      [ngClass]="animationsPlaying ? 'game-button-disabled' : 'game-button'"
+      (click)="move('paper-plane')"
+      [disabled]="animationsPlaying"
+    >
+      <h1 class="fa fa-hand fa-xxl icon-button"></h1>
+    </button>
+
+    <button
+      [ngClass]="animationsPlaying ? 'game-button-disabled' : 'game-button'"
+      (click)="move('scissors')"
+      disabled
+      [disabled]="animationsPlaying"
+    >
+      <h1 class="fa fa-hand-scissors fa-xxl icon-button"></h1>
+    </button>
+  </div>
+
+  <div class="col-md-9">
+    <div class="row">
+      <div class="col-md-6 text-left">
+        <h1>{{ player1Score }}</h1>
+      </div>
+      <div class="col-md-6 text-right">
+        <h1>{{ player2Score }}</h1>
+      </div>
+      <h2
+        class="text-center"
+        [ngClass]="
+          tied || !player1Move
+            ? 'alert-info'
+            : player1Lose
+            ? 'alert-danger'
+            : 'alert-success'
+        "
+      >
+        {{ statusText }}
+      </h2>
+    </div>
+
+    <div *ngIf="player1Move">
+      <div class="row content-center text-center">
+        <h1 class="col-md-3" [ngClass]="{ win: player1Win }">
+          <i class="falling-icon fa-solid fa-crown"></i>
+        </h1>
+        <div class="col-md-3"></div>
+        <h1 class="col-md-3" [ngClass]="{ win: player2Win }">
+          <i class="falling-icon fa-solid fa-crown"></i>
+        </h1>
+      </div>
+
+      <div class="row content-center text-center">
+        <h1
+          class="col-md-3"
+          [ngClass]="{
+                            gemLose: player1Lose && player1Move === 'fa-gem',
+                            paperPlaneLose1: player1Lose && player1Move === 'fa-paper-plane',
+                            scissorsLose: player1Lose && player1Move === 'fa-scissors',
+                            tied1: tied,
+                        }"
+        >
+          <i class="fa-solid" [ngClass]="player1Move"></i>
+        </h1>
+        <h2 class="col-md-3">VS.</h2>
+        <h1
+          class="col-md-3"
+          [ngClass]="{
+                            gemLose: player2Lose && player2Move === 'fa-gem',
+                            paperPlaneLose2: player2Lose && player2Move === 'fa-paper-plane',
+                            scissorsLose: player2Lose && player2Move === 'fa-scissors',
+                            tied2: tied,
+                        }"
+        >
+          <i class="fa-solid flipped-icon" [ngClass]="player2Move"></i>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>

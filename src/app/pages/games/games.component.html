@@ -1,0 +1,18 @@
+<div class="row" style="margin-top: 20px">
+  <div class="offset-md-9 col-md-3">
+    <label for="sort">Select the game:</label>
+    <select id="sort" class="form-control" [(ngModel)]="game">
+      <option value="rockpaperscissors" selected>Rock, paper, scissors</option>
+    </select>
+  </div>
+  <hr
+    class="col-md-12 bottom-padding center-div"
+    style="margin-top: 20px; width: 70%"
+  />
+</div>
+
+<app-rock *ngIf="game === 'rockpaperscissors'"></app-rock>
+
+<hr class="bottom-padding center-div" style="margin-top: 20px; width: 70%" />
+
+<app-footer></app-footer>
