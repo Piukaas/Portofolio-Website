@@ -167,7 +167,8 @@ i.icon-button {
 
 /* No Styling Light Button */
 .clear-button {
-  margin-top: 20%;
+  position: absolute;
+  bottom: 3em;
   left: 0;
   right: 0;
   border: 0;
