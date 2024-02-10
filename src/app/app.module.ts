@@ -14,6 +14,7 @@ import { LayoutComponent } from './core/layout/layout.component';
 import { AllProjectsComponent } from './pages/allprojects/allprojects.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ProjectComponent } from './pages/project/project.component';
+import { CategoryProjectsComponent } from './pages/categoryprojects/category.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ProjectComponent } from './pages/project/project.component';
     ProjectsComponent,
     AllProjectsComponent,
     ProjectComponent,
+    CategoryProjectsComponent,
   ],
   imports: [
     CommonModule,
