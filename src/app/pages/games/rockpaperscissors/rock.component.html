@@ -1,33 +1,40 @@
-<div class="row top-padding">
+<div class="row top-padding center-div content-left">
   <h1 class="no-top-margin big-project-title">Rock, paper, scissors</h1>
-  <div class="col-md-2">
-    <button
-      [ngClass]="animationsPlaying ? 'game-button-disabled' : 'game-button'"
-      (click)="move('gem')"
-      [disabled]="animationsPlaying"
-    >
-      <h1 class="fa fa-hand-back-fist fa-xxl icon-button"></h1>
-    </button>
+  <div class="col-md-11">
+    <div class="row">
+      <div class="col-md-4">
+        <button
+          [ngClass]="animationsPlaying ? 'game-button-disabled' : 'game-button'"
+          (click)="move('gem')"
+          [disabled]="animationsPlaying"
+        >
+          <h1 class="fa fa-hand-back-fist fa-xxl icon-button"></h1>
+        </button>
+      </div>
 
-    <button
-      [ngClass]="animationsPlaying ? 'game-button-disabled' : 'game-button'"
-      (click)="move('paper-plane')"
-      [disabled]="animationsPlaying"
-    >
-      <h1 class="fa fa-hand fa-xxl icon-button"></h1>
-    </button>
+      <div class="col-md-4">
+        <button
+          [ngClass]="animationsPlaying ? 'game-button-disabled' : 'game-button'"
+          (click)="move('paper-plane')"
+          [disabled]="animationsPlaying"
+        >
+          <h1 class="fa fa-hand fa-xxl icon-button"></h1>
+        </button>
+      </div>
 
-    <button
-      [ngClass]="animationsPlaying ? 'game-button-disabled' : 'game-button'"
-      (click)="move('scissors')"
-      disabled
-      [disabled]="animationsPlaying"
-    >
-      <h1 class="fa fa-hand-scissors fa-xxl icon-button"></h1>
-    </button>
+      <div class="col-md-4">
+        <button
+          [ngClass]="animationsPlaying ? 'game-button-disabled' : 'game-button'"
+          (click)="move('scissors')"
+          [disabled]="animationsPlaying"
+        >
+          <h1 class="fa fa-hand-scissors fa-xxl icon-button"></h1>
+        </button>
+      </div>
+    </div>
   </div>
 
-  <div class="col-md-8">
+  <div class="col-md-11">
     <div class="row">
       <div class="col-md-6 text-left">
         <h1>{{ player1Score }}</h1>
@@ -35,19 +42,20 @@
       <div class="col-md-6 text-right">
         <h1>{{ player2Score }}</h1>
       </div>
-      <h2
-        class="text-center"
-        [ngClass]="
-          tied || !player1Move
-            ? 'alert-info'
-            : player1Lose
-            ? 'alert-danger'
-            : 'alert-success'
-        "
-      >
-        {{ statusText }}
-      </h2>
     </div>
+
+    <h2
+      class="text-center"
+      [ngClass]="
+        tied || !player1Move
+          ? 'alert-info'
+          : player1Lose
+          ? 'alert-danger'
+          : 'alert-success'
+      "
+    >
+      {{ statusText }}
+    </h2>
 
     <div *ngIf="player1Move">
       <div class="row content-center text-center">
