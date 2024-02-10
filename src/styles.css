@@ -59,6 +59,16 @@ i.icon {
   color: rgb(255, 255, 255);
 }
 
+.icon-disabled {
+  color: rgba(25, 25, 25, 0.5);
+  cursor: not-allowed;
+  transition: 1s;
+}
+
+[theme="dark"] .icon-disabled {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 i.icon-button {
   color: rgb(255, 255, 255);
   transition: 1s;
@@ -400,63 +410,6 @@ i.icon-button {
   visibility: visible;
 }
 
-/* Code Tooltip */
-.code-tooltip {
-  position: relative;
-  border: 0;
-  background-color: transparent;
-  font-size: 15px;
-  transition: 1s;
-}
-
-.code-tooltip:hover {
-  cursor: help;
-}
-
-.code-tooltip .tooltiptext {
-  visibility: hidden;
-  width: 250px;
-  background-color: rgb(25, 25, 25);
-  color: rgb(255, 255, 255);
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 130%;
-  left: -150%;
-  margin-left: -60px;
-  opacity: 0;
-  transform: translateY(8px) rotate(0deg);
-  transition: 0.5s;
-}
-
-[theme="dark"] .code-tooltip .tooltiptext {
-  background-color: rgb(255, 255, 255);
-  color: rgb(25, 25, 25);
-}
-
-.code-tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgb(25, 25, 25) transparent transparent transparent;
-}
-
-[theme="dark"] .code-tooltip .tooltiptext::after {
-  border-color: rgb(255, 255, 255) transparent transparent transparent;
-}
-
-.code-tooltip:hover .tooltiptext {
-  transform: translateY(0px) rotate(0deg);
-  opacity: 1;
-  visibility: visible;
-}
-
 /* Source Code Button */
 a.source-code {
   color: rgb(25, 25, 25);
@@ -467,7 +420,7 @@ a.source-code {
   color: rgb(255, 255, 255);
 }
 
-a.source-code:hover svg {
+a.source-code:hover i {
   transition: 1s;
   transform: scale(1.25) rotate(-360deg);
   cursor: pointer;
