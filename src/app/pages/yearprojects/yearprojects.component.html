@@ -1,0 +1,19 @@
+<ng-container *ngIf="projects">
+  <h3 class="center-text top-padding">
+    {{ year
+    }}<button *ngIf="!isYearVisible" (click)="toggleYear()" class="collapsable">
+      <i class="fa-solid fa-xs fa-down-left-and-up-right-to-center"></i>
+    </button>
+    <button *ngIf="isYearVisible" (click)="toggleYear()" class="collapsable">
+      <i class="fa-solid fa-xs fa-up-right-and-down-left-from-center"></i>
+    </button>
+  </h3>
+  <hr class="year-line bottom-padding" />
+
+  <div [hidden]="isYearVisible">
+    <app-project
+      *ngFor="let project of projects; let i = index"
+      [project]="project"
+      [layout]="i % 2 === 0 ? 'even' : 'odd'"
+    ></app-project></div
+></ng-container>

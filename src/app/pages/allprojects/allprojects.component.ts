@@ -8,10 +8,6 @@ import { map } from 'rxjs/operators';
   templateUrl: './allprojects.component.html',
 })
 export class AllProjectsComponent implements OnInit {
-  is2023 = false;
-  is2022 = false;
-  is2021 = false;
-  is2020 = false;
   projects$: Observable<any> = of();
   groupedProjects: any;
 
@@ -33,21 +29,5 @@ export class AllProjectsComponent implements OnInit {
         )
       )
       .subscribe((groupedProjects) => (this.groupedProjects = groupedProjects));
-  }
-
-  toggle2023() {
-    this.is2023 = !this.is2023;
-  }
-
-  toggle2022() {
-    this.is2022 = !this.is2022;
-  }
-
-  toggle2021() {
-    this.is2021 = !this.is2021;
-  }
-
-  toggle2020() {
-    this.is2020 = !this.is2020;
   }
 }

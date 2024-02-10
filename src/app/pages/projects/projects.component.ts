@@ -33,44 +33,9 @@ export class ProjectsComponent {
     this.scrollNextView();
   }
 
-  websiteProjects() {
+  navigateToProjects(type: string) {
     this.router.navigate(['/projects/category'], {
-      queryParams: { type: 'Website' },
-    });
-    this.scrollNextView();
-  }
-
-  apiProjects() {
-    this.router.navigate(['/projects/category'], {
-      queryParams: { type: 'API' },
-    });
-    this.scrollNextView();
-  }
-
-  dataProjects() {
-    this.router.navigate(['/projects/category'], {
-      queryParams: { type: 'Data' },
-    });
-    this.scrollNextView();
-  }
-
-  appProjects() {
-    this.router.navigate(['/projects/category'], {
-      queryParams: { type: 'Mobile' },
-    });
-    this.scrollNextView();
-  }
-
-  gameProjects() {
-    this.router.navigate(['/projects/category'], {
-      queryParams: { type: 'Game' },
-    });
-    this.scrollNextView();
-  }
-
-  algorithmProjects() {
-    this.router.navigate(['/projects/category'], {
-      queryParams: { type: 'Algorithm' },
+      queryParams: { type: type },
     });
     this.scrollNextView();
   }

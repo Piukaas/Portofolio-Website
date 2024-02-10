@@ -1,5 +1,36 @@
 [
   {
+    "title": "Internship - Easyflex",
+    "year": 2023,
+    "projectType": "Internship",
+    "codeUrl": "",
+    "description": "During my internship at Easyflex Software, I undertook a project aimed at enhancing the functionality of the Easyflex2Go (EF2GO) application. My focus was on expanding the inquiries, inquiries within Easyflex are basically job offers for employment agencies. Prior to my project, users had to switch in between the Easyflex and EF2GO application to do anything with the inquiries. My solution involved streamlining this process. This enabled the users to use the inquiries within EF2GO, and the data in between the two applications is kept up to date by running data synchronisations, so that the databases contain the same information.",
+    "imageUrl": "../../../assets/easyflex.png",
+    "tags": [
+      {
+        "name": "Data synchronisation",
+        "tooltip": "Sync multiple databases",
+        "type": "Technology"
+      },
+      { "name": "Postman", "tooltip": "API testing", "type": "Program" }
+    ],
+    "frameworks": [
+      { "name": "Vue.js", "icon": "vuejs" },
+      { "name": "Laravel", "icon": "laravel" }
+    ],
+    "ides": ["Visual Studio Code"],
+    "languages": [
+      { "name": "JavaScript", "icon": "js" },
+      { "name": "PHP", "icon": "php" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS", "icon": "css3-alt" },
+      { "name": "XML", "icon": "" }
+    ],
+    "development": "Full stack",
+    "databases": ["MySQL", "PostgreSQL"],
+    "roleDescription": "Intern software developer - I was responsible for expanding upon the inquiries in the EF2GO application."
+  },
+  {
     "title": "Het Leven in Handen",
     "year": 2023,
     "projectType": "Game",
