@@ -5,7 +5,12 @@
   <div class="content col-md-5 project-description">
     <h1 class="no-top-margin big-project-title">
       {{ project.title }}
-      <a class="source-code" href="{{ project.codeUrl }}" target="_blank">
+      <a
+        *ngIf="project.codeUrl; else disabled"
+        class="source-code"
+        href="{{ project.codeUrl }}"
+        target="_blank"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -19,6 +24,25 @@
           />
         </svg>
       </a>
+      <ng-template #disabled>
+        <button class="code-tooltip">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="#808080"
+            class="bi bi-file-earmark-code-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"
+            />
+          </svg>
+          <span class="tooltiptext"
+            >Source code not available due to privacy or NDA</span
+          >
+        </button>
+      </ng-template>
     </h1>
     <p class="paragraph">
       {{ project.description }}<br /><br />
@@ -35,7 +59,14 @@
       {{ tag.name }} <span class="tooltiptext">{{ tag.tooltip }}</span>
     </button>
     <button *ngFor="let framework of project.frameworks" class="tag">
-      {{ framework }} <span class="tooltiptext">Framework</span>
+      <i
+        *ngIf="framework.icon; else text"
+        class="fa-brands fa-xl fa-{{ framework.icon }}"
+      ></i>
+      <ng-template #text>
+        {{ framework.name }}
+      </ng-template>
+      <span class="tooltiptext">Framework</span>
     </button>
     <button *ngFor="let ide of project.ides" class="tag">
       {{ ide }}
@@ -43,7 +74,14 @@
     </button>
     <span *ngIf="project.languages.length" class="vl">|</span>
     <button *ngFor="let language of project.languages" class="tag">
-      {{ language }} <span class="tooltiptext">Language</span>
+      <i
+        *ngIf="language.icon; else text"
+        class="fa-brands fa-xl fa-{{ language.icon }}"
+      ></i>
+      <ng-template #text>
+        {{ language.name }}
+      </ng-template>
+      <span class="tooltiptext">Language</span>
     </button>
     <span class="vl">|</span>
     <button class="tag">
@@ -80,7 +118,10 @@
         {{ project.roleDescription }}.<br /><br />
         <strong>Frameworks and programs</strong><br />
         <ul>
-          <li *ngFor="let framework of project.frameworks">{{ framework }}</li>
+          <li *ngFor="let framework of project.frameworks">
+            {{ framework.name }}
+            <i class="fa-brands fa-{{ framework.icon }}"></i>
+          </li>
           <ng-container *ngFor="let tag of project.tags">
             <li *ngIf="tag.type === 'Program'">
               {{ tag.name }}
@@ -95,7 +136,10 @@
         </ul>
         <strong>Programming languages and technologies</strong><br />
         <ul>
-          <li *ngFor="let language of project.languages">{{ language }}</li>
+          <li *ngFor="let language of project.languages">
+            {{ language.name }}
+            <i class="fa-brands fa-{{ language.icon }}"></i>
+          </li>
           <ng-container *ngFor="let tag of project.tags">
             <li *ngIf="tag.type === 'Technology'">
               {{ tag.name }}

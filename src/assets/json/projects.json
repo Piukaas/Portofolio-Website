@@ -6,16 +6,10 @@
     "codeUrl": "https://github.com/Piukaas/Serious-Game",
     "description": "Het Leven in Handen is an immersive Unity game designed to provide policymakers with a unique perspective on the impact of Artificial Intelligence. Step into the shoes of an AI responsible for making critical decisions for Cardiovascular disease patients. Through a series of scenarios, players must carefully answer yes or no, knowing that each choice has significant consequences for patient well-being. Incorrect decisions lead to engaging CPR minigames, while correct choices unlock thrilling maze challenges. With its thought-provoking gameplay and strategic decision-making, this game offers policymakers an interactive experience to better understand the complexities of AI in healthcare.",
     "imageUrl": "../../../assets/serious.png",
-    "tags": [
-      {
-        "name": "Unity",
-        "tooltip": "Game engine",
-        "type": "Program"
-      }
-    ],
+    "tags": [{ "name": "Unity", "tooltip": "Game engine", "type": "Program" }],
     "frameworks": [],
     "ides": ["Visual Studio Code"],
-    "languages": ["C#"],
+    "languages": [{ "name": "C#", "icon": "" }],
     "development": "Full stack",
     "databases": [],
     "roleDescription": "Lead Developer - I was responsible for making a lot of game elements along with other students."
@@ -27,16 +21,10 @@
     "codeUrl": "https://drive.filen.io/f/983f3780-b3b9-4aad-8fe1-47a1aca5be36#1r1JmEoJzb4bTXFENmYjySi2kVy48hSZ",
     "description": "This is a captivating 2D game developed in Unity for a thrilling Game Jam challenge. Step into the world of addictive confectionery as you embark on a cookie clicker adventure infused with gambling elements. Take risks, place bets, and aim to amass a fortune in delectable treats. The game's enticing mechanics offer an easy-to-learn, yet engaging experience, keeping players hooked for hours. With polished controls and immersive gameplay, Cookie Clicker will test your luck, strategy, and sweet tooth. Can you become the ultimate cookie tycoon in this addictive gambling extravaganza?",
     "imageUrl": "../../../assets/gamejam.png",
-    "tags": [
-      {
-        "name": "Unity",
-        "tooltip": "Game engine",
-        "type": "Program"
-      }
-    ],
+    "tags": [{ "name": "Unity", "tooltip": "Game engine", "type": "Program" }],
     "frameworks": [],
     "ides": ["Visual Studio Code"],
-    "languages": ["C#"],
+    "languages": [{ "name": "C#", "icon": "" }],
     "development": "Full stack",
     "databases": [],
     "roleDescription": "Developer - I was responsible for creating the game along with a project partner."
@@ -48,16 +36,10 @@
     "codeUrl": "https://drive.filen.io/f/8b721d7f-1944-4e9c-9b06-57e764985344#iqzlkIbfLXUFsxjWG3NdEwXNu8k2IUVg",
     "description": "This 2D Unity game, developed using online tutorials, challenges players to shoot the correct shapes at incoming targets. The player must quickly identify the appropriate shape to fire in order to destroy various objects coming towards them. The game has a simple, addicting gameplay loop that's easy to pick up but hard to master. With the push of a button, players launch their ammo and rack up points while avoiding obstacles. With sharp visuals, intuitive controls, and a focus on skill-based gameplay, this 2D shooter is sure to provide a satisfying challenge for players of all levels.",
     "imageUrl": "../../../assets/shape.png",
-    "tags": [
-      {
-        "name": "Unity",
-        "tooltip": "Game Engine",
-        "type": "Program"
-      }
-    ],
+    "tags": [{ "name": "Unity", "tooltip": "Game Engine", "type": "Program" }],
     "frameworks": [],
     "ides": ["Visual Studio Code"],
-    "languages": ["C#"],
+    "languages": [{ "name": "C#", "icon": "" }],
     "development": "Full stack",
     "databases": [],
     "roleDescription": "Lead Developer - I was fully responsible for creating the game following tutorials."
@@ -69,16 +51,10 @@
     "codeUrl": "https://drive.filen.io/f/ddf67c49-d829-4030-8e7c-76aad0eca1b4#hAuGi68nKfKVuYrwKh2kriQ4vXJ67hUg",
     "description": "This 2D game, created in Unity and built using online tutorials, places the player in the role of a ghost in an endless runner. With the goal of avoiding obstacles that litter the path ahead, the player must navigate through the game's challenging levels. The game's simple mechanics are easy to pick up, but challenging enough to keep players engaged. With responsive controls and a sharp focus on gameplay, this endless runner is sure to test both your reflexes and your wits.",
     "imageUrl": "../../../assets/ghost.png",
-    "tags": [
-      {
-        "name": "Unity",
-        "tooltip": "Game Engine",
-        "type": "Program"
-      }
-    ],
+    "tags": [{ "name": "Unity", "tooltip": "Game Engine", "type": "Program" }],
     "frameworks": [],
     "ides": ["Visual Studio Code"],
-    "languages": ["C#"],
+    "languages": [{ "name": "C#", "icon": "" }],
     "development": "Full stack",
     "databases": [],
     "roleDescription": "Lead Developer - I was fully responsible for creating the game following tutorials."
@@ -90,16 +66,10 @@
     "codeUrl": "https://drive.filen.io/f/9a1ade26-4376-4713-a0c1-ce75323057f7#VCgQMJb1PT9uemrRmrDLtsYQN0LxmDhV",
     "description": "This project involves creating a game in Unity where the player has to navigate a maze while avoiding obstacles to reach the end goal. The game development process involves following online tutorials to learn the basics of Unity game development, including designing game mechanics, coding, and designing 3D objects. The final product will be an entertaining and challenging game that tests players' problem-solving skills and ability to react quickly in order to avoid the obstacles and successfully navigate through the maze to reach the end goal.",
     "imageUrl": "../../../assets/maze.png",
-    "tags": [
-      {
-        "name": "Unity",
-        "tooltip": "Game Engine",
-        "type": "Program"
-      }
-    ],
+    "tags": [{ "name": "Unity", "tooltip": "Game Engine", "type": "Program" }],
     "frameworks": [],
     "ides": ["Visual Studio Code"],
-    "languages": ["C#"],
+    "languages": [{ "name": "C#", "icon": "" }],
     "development": "Full stack",
     "databases": [],
     "roleDescription": "Lead Developer - I was fully responsible for creating the game following tutorials."
@@ -111,16 +81,10 @@
     "codeUrl": "https://drive.filen.io/f/254257d6-b5f1-4d08-92c8-58a9512ba1d7#xlMtGzwZI4eNYmE8EnhTUUUIVKMKZrik",
     "description": "This project involves creating a game in Unity where the player controls a ball that has to collect all of the collectibles within a given level to progress. The development process involves following online tutorials to learn the basics of Unity game development, including creating game objects, scripting game mechanics, and designing levels. The end product will be a fun and engaging game that challenges players to use their skills and strategy to navigate the ball through the obstacles and collect all of the items.",
     "imageUrl": "../../../assets/ball.png",
-    "tags": [
-      {
-        "name": "Unity",
-        "tooltip": "Game Engine",
-        "type": "Program"
-      }
-    ],
+    "tags": [{ "name": "Unity", "tooltip": "Game Engine", "type": "Program" }],
     "frameworks": [],
     "ides": ["Visual Studio Code"],
-    "languages": ["C#"],
+    "languages": [{ "name": "C#", "icon": "" }],
     "development": "Full stack",
     "databases": [],
     "roleDescription": "Lead Developer - I was fully responsible for creating the game following tutorials."
@@ -133,20 +97,16 @@
     "description": "For Ball.com, a fake retailer going global, the project involved designing a system where customers can place orders from a pre-determined set of products. Orders are picked from a large warehouse, packaged, and sent using a logistics company selected by lowest price. Trusted third-party suppliers can add products. Customers can track order status and pay using forward- or after-payment. A service department answers customer queries. The system was designed using microservices architecture, event-driven communication, and eventual consistency to ensure scalability, maintainability, and efficiency.",
     "imageUrl": "../../../assets/solution.png",
     "tags": [
-      {
-        "name": "RabbitMQ",
-        "tooltip": "Software",
-        "type": "Technology"
-      },
-      {
-        "name": "Docker",
-        "tooltip": "Deployment",
-        "type": "Program"
-      }
+      { "name": "RabbitMQ", "tooltip": "Software", "type": "Technology" },
+      { "name": "Docker", "tooltip": "Deployment", "type": "Program" }
     ],
-    "frameworks": ["Node.js"],
+    "frameworks": [{ "name": "Node.js", "icon": "node-js" }],
     "ides": ["Visual Studio Code"],
-    "languages": ["JavaScript", "JSON", "SQL"],
+    "languages": [
+      { "name": "JavaScript", "icon": "js" },
+      { "name": "JSON", "icon": "" },
+      { "name": "SQL", "icon": "" }
+    ],
     "development": "Backend",
     "databases": ["MySQL", "EvenStoreDB"],
     "roleDescription": "Backend Developer - I was responsible for creating some parts of the microservices along with other people."
@@ -159,11 +119,7 @@
     "description": "Appendix C requires creating a Dominoes game where an AI can be added. Three steps are involved: writing a generic domino engine, creating an adversary using a minimax algorithm, and playing without knowing the opponent's tiles. Appendix F requires developing an artificial neural network to recognize handwritten digits using the MNIST dataset. Different network topologies and input parameters are experimented with to see their effect. AUROC is the suggested evaluation function. Parameters include (hidden) layers, perceptrons, and activation function. Results are documented and explained.",
     "imageUrl": "../../../assets/ai.png",
     "tags": [
-      {
-        "name": "Tensorflow",
-        "tooltip": "Library",
-        "type": "Program"
-      },
+      { "name": "Tensorflow", "tooltip": "Library", "type": "Program" },
       {
         "name": "Artificial Intelligence",
         "tooltip": "Focus",
@@ -172,7 +128,7 @@
     ],
     "frameworks": [],
     "ides": ["Visual Studio Code"],
-    "languages": ["JavaScript"],
+    "languages": [{ "name": "JavaScript", "icon": "js" }],
     "development": "Backend",
     "databases": [],
     "roleDescription": "Backend Developer - I was responsible for creating the algorithm and training the neural network with my project partner."
@@ -185,9 +141,15 @@
     "description": "My portfolio website showcases all of my computer science projects, complete with detailed descriptions and information about the tools and technologies used in each project. Visitors can browse through the portfolio to gain a comprehensive understanding of my skills and experience in the field of computer science. The portfolio website serves as an excellent showcase of my technical abilities and dedication to the field of computer science.",
     "imageUrl": "../../../assets/portfolio.png",
     "tags": [],
-    "frameworks": ["Angular"],
+    "frameworks": [{ "name": "Angular", "icon": "angular" }],
     "ides": ["Visual Studio Code"],
-    "languages": ["TypeScript", "JavaScript", "HTML5", "CSS", "JSON"],
+    "languages": [
+      { "name": "TypeScript", "icon": "" },
+      { "name": "JavaScript", "icon": "js" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS", "icon": "css3-alt" },
+      { "name": "JSON", "icon": "" }
+    ],
     "development": "Frontend",
     "databases": [],
     "roleDescription": "Lead Developer - I was fully responsible for every part of the portfolio website and there were no other people involved."
@@ -199,16 +161,15 @@
     "codeUrl": "https://drive.filen.io/f/8a461ecf-f89c-4929-b1e5-e59a31603089#DOPyF9V64OcS7gXPjfa9KGGKFN0GZUql",
     "description": "Inspired by 'The Circle' by Dave Eggers, our project had three components: a web platform for live streams and chat, an Android app for streaming and chat, and a backend server. Confidentiality was not allowed, so data was stored in plaintext and signed with a private key. RSASSA-PKCS1-v1_5 with SHA-256 was used for verification using the public key. Availability was not a concern, and scalability was a requirement. Our project team of four created the website for the live streams.",
     "imageUrl": "../../../assets/circle.png",
-    "tags": [
-      {
-        "name": "RTMP",
-        "tooltip": "Protocol",
-        "type": "Technology"
-      }
-    ],
-    "frameworks": ["Angular"],
+    "tags": [{ "name": "RTMP", "tooltip": "Protocol", "type": "Technology" }],
+    "frameworks": [{ "name": "Angular", "icon": "angular" }],
     "ides": ["Visual Studio Code"],
-    "languages": ["TypeScript", "JavaScript", "HTML5", "CSS"],
+    "languages": [
+      { "name": "TypeScript", "icon": "" },
+      { "name": "JavaScript", "icon": "js" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS", "icon": "css3-alt" }
+    ],
     "development": "Frontend",
     "databases": ["Azure SQL Database"],
     "roleDescription": "Scrum Master - I was responsible for creating the frontend for the web application and I was the scrum master, so I leaded the daily standups."
@@ -223,7 +184,7 @@
     "tags": [],
     "frameworks": [],
     "ides": ["Jupyter Notebook"],
-    "languages": ["Python"],
+    "languages": [{ "name": "Python", "icon": "python" }],
     "development": "Backend",
     "databases": ["Online dataset"],
     "roleDescription": "Lead Developer - I was fully responsible for every part of the Python portfolio and there were no other people involved."
@@ -235,16 +196,10 @@
     "codeUrl": "https://drive.filen.io/f/6561253a-2f18-4550-a980-c193089f472d#yx6TibF5GW6VC7sPQxy42UQ4UXghwwUd",
     "description": "The task is to convert Kramse's operational database and associated files to a data warehouse using SQL Server. The process involves extracting data from multiple sources, designing a star or snowflake schema, implementing the schema in SQL Server, populating the data warehouse with data, and designing one or more dashboards to meet Kramse's information needs. A product responsibility report detailing the choices made and the reasons behind them is required. The technical files necessary to build the data warehouse must also be included.",
     "imageUrl": "../../../assets/kramse.png",
-    "tags": [
-      {
-        "name": "Power BI",
-        "tooltip": "Dashboard",
-        "type": "Program"
-      }
-    ],
+    "tags": [{ "name": "Power BI", "tooltip": "Dashboard", "type": "Program" }],
     "frameworks": [],
     "ides": ["Visual Studio"],
-    "languages": ["SQL"],
+    "languages": [{ "name": "SQL", "icon": "" }],
     "development": "Full stack",
     "databases": ["Microsoft SQL"],
     "roleDescription": "Lead Developer - I was fully responsible for every part of datawarehouses and dashboards and there were no other people involved."
@@ -253,19 +208,22 @@
     "title": "Stel je Vraag LIVE! - CM.com",
     "year": 2021,
     "projectType": "Website",
-    "codeUrl": "https://drive.filen.io/f/6fdbbab9-6a33-4e9c-ba0f-0c398f5575de#7rlWAtzZPPDMkgGdzLorOgtchcwaZyT9",
+    "codeUrl": "",
     "description": "CM.com is based in Breda and develops a platform for mobile communication and payments used by customers worldwide. They offer solutions for SMS, WhatsApp, Viber, WeChat, Telegram, Facebook Messenger, Apple Business Chat, RCS, and innovative payment options. The company is looking for an online tool that allows visitors to log in and share questions during live presentations. The tool aims to solve the problem of the presenter not repeating questions asked by the audience. By using WebRTC technology, the presenter can hear the questions while the audience can also listen to the question asked.",
     "imageUrl": "../../../assets/cmcom.png",
-    "tags": [
-      {
-        "name": "WebRTC",
-        "tooltip": "Protocol",
-        "type": "Technology"
-      }
+    "tags": [{ "name": "WebRTC", "tooltip": "Protocol", "type": "Technology" }],
+    "frameworks": [
+      { "name": "Angular", "icon": "angular" },
+      { "name": "Node.js", "icon": "node-js" }
     ],
-    "frameworks": ["Angular", "Node.js"],
     "ides": ["Visual Studio Code"],
-    "languages": ["TypeScript", "JavaScript", "SQL", "HTML5", "CSS"],
+    "languages": [
+      { "name": "TypeScript", "icon": "" },
+      { "name": "JavaScript", "icon": "js" },
+      { "name": "SQL", "icon": "" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS", "icon": "css3-alt" }
+    ],
     "development": "Full stack",
     "databases": ["MySQL"],
     "roleDescription": "Scrum Master - I was responsible for creating the front- and backend of the application, I leaded the daily standups and I contacted the stakeholder."
@@ -278,9 +236,18 @@
     "description": "The individual project is to create a full stack single page web application with CRUD functionality on a chosen domain. The web application should have a client-side front-end, using web-based user interface and an API server. The server should use NoSQL databases for data storage. The project should have at least three entities with schema references and user authentication for editing and deleting entities. The system should be deployed online and have sufficient data to demonstrate its functionality.",
     "imageUrl": "../../../assets/client.png",
     "tags": [],
-    "frameworks": ["Angular", "Node.js"],
+    "frameworks": [
+      { "name": "Angular", "icon": "angular" },
+      { "name": "Node.js", "icon": "node-js" }
+    ],
     "ides": ["Visual Studio Code"],
-    "languages": ["TypeScript", "JavaScript", "JSON", "HTML5", "CSS"],
+    "languages": [
+      { "name": "TypeScript", "icon": "" },
+      { "name": "JavaScript", "icon": "js" },
+      { "name": "JSON", "icon": "" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS", "icon": "css3-alt" }
+    ],
     "development": "Full stack",
     "databases": ["Neo4j", "MongoDB"],
     "roleDescription": "Lead Developer - I was fully responsible for every part of the client-side website and there were no other people involved."
@@ -293,20 +260,21 @@
     "description": "This project aims to develop a web application using ASP.net MVC Core, applying a good application architecture and utilizing an automated development pipeline with unit testing and deployment. The project focuses on creating a practice management system for a new physiotherapy practice that Avans University is opening to support students and employees. The system will be used to manage patient records, appointments, and treatment plans. The development team will demonstrate the application and their design choices during the final assessment.",
     "imageUrl": "../../../assets/server.png",
     "tags": [
-      {
-        "name": "Azure DevOps",
-        "tooltip": "CI/CD",
-        "type": "Program"
-      },
+      { "name": "Azure DevOps", "tooltip": "CI/CD", "type": "Program" },
       {
         "name": "Onion Architecture",
         "tooltip": "Architecture",
         "type": "Technology"
       }
     ],
-    "frameworks": ["ASP.NET Core"],
+    "frameworks": [{ "name": "ASP.NET Core", "icon": "" }],
     "ides": ["Visual Studio"],
-    "languages": ["C#", "SQL", "HTML5", "CSS"],
+    "languages": [
+      { "name": "C#", "icon": "" },
+      { "name": "SQL", "icon": "" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS", "icon": "css3-alt" }
+    ],
     "development": "Full stack",
     "databases": ["Azure SQL Database"],
     "roleDescription": "Lead Developer - I was fully responsible for every part of the server-side website and there were no other people involved."
@@ -321,7 +289,10 @@
     "tags": [],
     "frameworks": [],
     "ides": ["Android Studio"],
-    "languages": ["Java", "XML"],
+    "languages": [
+      { "name": "Java", "icon": "java" },
+      { "name": "XML", "icon": "" }
+    ],
     "development": "Frontend",
     "databases": ["Local Storage"],
     "roleDescription": "Frontend Developer - I was responsible for designing an Android application along with 9 other developers."
@@ -334,15 +305,15 @@
     "description": " In this project, a Node.js API with CRUD functionality was created to manage meals that can be prepared and delivered to student homes. The API was developed using modern software development practices and techniques, ensuring scalability and maintainability. The system provides easy management of meals, including creating, reading, updating, and deleting meals. The solution is designed to optimize the meal delivery process, making it more efficient and reducing the workload on staff. The project required expertise in Node.js, RESTful API design, and database management.",
     "imageUrl": "../../../assets/maaltijd.png",
     "tags": [
-      {
-        "name": "Postman",
-        "tooltip": "API testing",
-        "type": "Program"
-      }
+      { "name": "Postman", "tooltip": "API testing", "type": "Program" }
     ],
-    "frameworks": ["Node.js"],
+    "frameworks": [{ "name": "Node.js", "icon": "node-js" }],
     "ides": ["Visual Studio Code"],
-    "languages": ["JavaScript", "JSON", "SQL"],
+    "languages": [
+      { "name": "JavaScript", "icon": "js" },
+      { "name": "JSON", "icon": "" },
+      { "name": "SQL", "icon": "" }
+    ],
     "development": "Backend",
     "databases": ["MySQL"],
     "roleDescription": " Lead Developer - I was fully responsible for every part of the Node.js API and there were no other people involved."
@@ -357,7 +328,10 @@
     "tags": [],
     "frameworks": [],
     "ides": ["Android Studio"],
-    "languages": ["Java", "XML"],
+    "languages": [
+      { "name": "Java", "icon": "java" },
+      { "name": "XML", "icon": "" }
+    ],
     "development": "Frontend",
     "databases": ["Public API"],
     "roleDescription": "Frontend Developer - I was responsible for creating the Android application along with 4 other developers."
@@ -372,7 +346,10 @@
     "tags": [],
     "frameworks": [],
     "ides": ["Android Studio"],
-    "languages": ["Java", "XML"],
+    "languages": [
+      { "name": "Java", "icon": "java" },
+      { "name": "XML", "icon": "" }
+    ],
     "development": "Frontend",
     "databases": ["Public API"],
     "roleDescription": "Lead Developer - I was fully responsible for every part of the Android application and there were no other people involved."
@@ -385,9 +362,13 @@
     "description": "This project involved creating a movie website using HTML5, CSS, JavaScript, and Bootstrap. The goal was to create a visually appealing website that would showcase a variety of movies. Bootstrap was used to ensure that the website was mobile-responsive and user-friendly. The website includes multiple pages for different movie genres and features custom CSS styling to enhance the overall design. The project also involved implementing JavaScript to create interactive elements, such as a search function and movie trailers.",
     "imageUrl": "../../../assets/movie.png",
     "tags": [],
-    "frameworks": ["Bootstrap"],
+    "frameworks": [{ "name": "Bootstrap", "icon": "bootstrap" }],
     "ides": ["Visual Studio Code"],
-    "languages": ["JavaScript", "HTML5", "CSS"],
+    "languages": [
+      { "name": "JavaScript", "icon": "js" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS", "icon": "css3-alt" }
+    ],
     "development": "Frontend",
     "databases": [],
     "roleDescription": "  Lead Developer - I was fully responsible for every part of the webdesign and there were no other people involved."
