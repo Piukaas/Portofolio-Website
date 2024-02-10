@@ -110,7 +110,7 @@ i.icon-button {
 
 /* Light Back to Top Button */
 .top-button {
-  border: 0;
+  border: 2px solid rgb(255, 255, 255);
   position: fixed;
   bottom: 1em;
   right: 1em;
@@ -130,13 +130,14 @@ i.icon-button {
 
 /* Dark Back to Top Button */
 [theme="dark"] .top-button {
+  border-color: rgb(25, 25, 25);
   color: rgb(25, 25, 25);
   background-color: rgb(255, 255, 255);
 }
 
 /* Light Button */
 .theme-button {
-  border: 0;
+  border: 2px solid rgb(255, 255, 255);
   top: 1em;
   left: 1em;
   position: fixed;
@@ -156,6 +157,7 @@ i.icon-button {
 
 /* Dark Button */
 [theme="dark"] .theme-button {
+  border-color: rgb(25, 25, 25);
   color: rgb(25, 25, 25);
   background-color: rgb(255, 255, 255);
 }
