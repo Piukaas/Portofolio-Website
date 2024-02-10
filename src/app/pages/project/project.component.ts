@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { ModalService } from '../_services/modal.service';
 
 @Component({
-  selector: 'project',
+  selector: 'app-project',
   templateUrl: './project.component.html',
 })
 export class ProjectComponent {

@@ -34,11 +34,11 @@
 <hr class="year-line bottom-padding" />
 
 <div [hidden]="is2023">
-  <project
+  <app-project
     *ngFor="let project of groupedProjects[2023]; let i = index"
     [project]="project"
     [layout]="i % 2 === 0 ? 'even' : 'odd'"
-  ></project>
+  ></app-project>
 </div>
 
 <!-- 2022 Projects -->
@@ -77,11 +77,11 @@
 <hr class="year-line bottom-padding" />
 
 <div [hidden]="is2022">
-  <project
+  <app-project
     *ngFor="let project of groupedProjects[2022]; let i = index"
     [project]="project"
     [layout]="i % 2 === 0 ? 'even' : 'odd'"
-  ></project>
+  ></app-project>
 </div>
 
 <!-- 2021 Projects -->
@@ -120,11 +120,11 @@
 <hr class="year-line bottom-padding" />
 
 <div [hidden]="is2021">
-  <project
+  <app-project
     *ngFor="let project of groupedProjects[2021]; let i = index"
     [project]="project"
     [layout]="i % 2 === 0 ? 'even' : 'odd'"
-  ></project>
+  ></app-project>
 </div>
 
 <!-- 2020 Projects -->
@@ -163,11 +163,11 @@
 <hr class="year-line bottom-padding" />
 
 <div [hidden]="is2020">
-  <project
+  <app-project
     *ngFor="let project of groupedProjects[2020]; let i = index"
     [project]="project"
     [layout]="i % 2 === 0 ? 'even' : 'odd'"
-  ></project>
+  ></app-project>
 </div>
 
 <app-footer></app-footer>

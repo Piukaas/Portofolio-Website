@@ -5,7 +5,7 @@ import { Observable, of } from 'rxjs';
 import { switchMap, filter, toArray } from 'rxjs/operators';
 
 @Component({
-  selector: 'category-projects',
+  selector: 'app-category',
   templateUrl: './category.component.html',
 })
 export class CategoryProjectsComponent implements OnInit {
