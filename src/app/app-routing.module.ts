@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './core/layout/layout.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { AllProjectsComponent } from './pages/allprojects/allprojects.component';
-import { CategoryProjectsComponent } from './pages/categoryprojects/category.component';
 
 const routes: Routes = [
   {
@@ -13,7 +12,6 @@ const routes: Routes = [
       { path: '', pathMatch: 'full', redirectTo: '' },
       { path: '', component: ProjectsComponent },
       { path: 'projects', component: AllProjectsComponent },
-      { path: 'projects/category', component: CategoryProjectsComponent },
     ],
   },
   { path: '**', redirectTo: '' },
