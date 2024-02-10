@@ -167,7 +167,7 @@ i.icon-button {
 
 /* No Styling Light Button */
 .clear-button {
-  margin-top: 15em;
+  margin-top: 20%;
   left: 0;
   right: 0;
   border: 0;
@@ -438,10 +438,6 @@ a.source-code:hover i {
 
 .category-container {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin: 50px 0;
 }
 
