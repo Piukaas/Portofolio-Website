@@ -6,16 +6,13 @@
     <h1 class="no-top-margin big-project-title">
       {{ project.title }}
       <a
-        *ngIf="project.codeUrl; else disabled"
+        *ngIf="project.codeUrl"
         class="source-code"
         href="{{ project.codeUrl }}"
         target="_blank"
       >
         <i class="fa-solid fa-xs fa-file-code icon"></i>
       </a>
-      <ng-template #disabled>
-        <i class="fa-solid fa-xs fa-file-code icon-disabled"></i>
-      </ng-template>
     </h1>
     <p class="paragraph">
       {{ project.description }}<br /><br />
