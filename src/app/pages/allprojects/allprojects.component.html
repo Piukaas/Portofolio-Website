@@ -41,6 +41,10 @@
 
 <div *ngIf="sort === 'year'; else alphabetically">
   <app-year-projects
+    [year]="2024"
+    [projects]="yearProjects?.[2024]"
+  ></app-year-projects>
+  <app-year-projects
     [year]="2023"
     [projects]="yearProjects?.[2023]"
   ></app-year-projects>
