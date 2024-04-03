@@ -531,8 +531,8 @@ a.source-code:hover i {
   background-image: url("src/assets/hover/data.png");
 }
 
-.category-button.internships::before {
-  background-image: url("src/assets/hover/internships.png");
+.category-button.experiences::before {
+  background-image: url("src/assets/hover/experiences.png");
 }
 
 .category-button.rockpaper::before {

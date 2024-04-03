@@ -1,8 +1,34 @@
 [
   {
+    "title": "AvansDevops",
+    "year": 2023,
+    "projectType": "Algorithm",
+    "codeUrl": "https://github.com/pjotrvp/AvansDevOps",
+    "description": "This project is designed for personal testing purposes, serving as a platform to experiment with a variety of design patterns within the context of a DevOps system. It functions as a personal sandbox environment, allowing for hands-on exploration of different design patterns and their effects on the system. By using this sub-implementation, you can independently assess the practical implications and benefits of applying various design patterns in a DevOps context, without having to make an interface.",
+    "imageUrl": "../../../assets/avansdevops.png",
+    "tags": [
+      {
+        "name": "Maven",
+        "tooltip": "Dependency management",
+        "type": "Program"
+      },
+      {
+        "name": "Design patterns",
+        "tooltip": "Architecture",
+        "type": "Technology"
+      }
+    ],
+    "frameworks": [],
+    "ides": ["Visual Studio Code"],
+    "languages": [{ "name": "Java", "icon": "java" }],
+    "development": "Backend",
+    "databases": [],
+    "roleDescription": "Lead developer - I was responsible for creating the application along with another student."
+  },
+  {
     "title": "Internship - Easyflex",
     "year": 2023,
-    "projectType": "Internship",
+    "projectType": "Experience",
     "codeUrl": "",
     "description": "During my internship at Easyflex Software, I undertook a project aimed at enhancing the functionality of the Easyflex2Go (EF2GO) application. My focus was on expanding the inquiries, inquiries within Easyflex are basically job offers for employment agencies. Prior to my project, users had to switch in between the Easyflex and EF2GO application to do anything with the inquiries. My solution involved streamlining this process. This enabled the users to use the inquiries within EF2GO, and the data in between the two applications is kept up to date by running data synchronisations, so that the databases contain the same information.",
     "imageUrl": "../../../assets/easyflex.png",
