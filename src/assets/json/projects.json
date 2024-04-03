@@ -1,7 +1,7 @@
 [
   {
     "title": "AvansDevops",
-    "year": 2023,
+    "year": 2024,
     "projectType": "Algorithm",
     "codeUrl": "https://github.com/pjotrvp/AvansDevOps",
     "description": "This project is designed for personal testing purposes, serving as a platform to experiment with a variety of design patterns within the context of a DevOps system. It functions as a personal sandbox environment, allowing for hands-on exploration of different design patterns and their effects on the system. By using this sub-implementation, you can independently assess the practical implications and benefits of applying various design patterns in a DevOps context, without having to make an interface.",
