@@ -474,7 +474,8 @@ a.source-code:hover i {
   border-radius: 25px;
   cursor: pointer;
   transition: 1s;
-  margin: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s;
