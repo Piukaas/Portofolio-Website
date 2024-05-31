@@ -1,5 +1,63 @@
 [
   {
+    "title": "Urban Innovation - Minor",
+    "year": 2024,
+    "projectType": "Experience",
+    "codeUrl": "",
+    "description": "This Urban Innovation minor provides students with practical experience in applying innovative concepts to urban settings, focusing on enhancing sustainability, social equity, and economic development. A key project involves implementing Doughnut Economics principles in the Hoge Vucht neighborhood in Breda, in collaboration with a client from Breda University of Applied Sciences. This project aims to improve the neighborhood's social aspects by fostering community engagement and sustainability. The minor integrates diverse fields such as urban planning, economics, and social sciences, equipping students with the skills needed for sustainable and inclusive urban development.",
+    "imageUrl": "../../../assets/urban-innovation.png",
+    "tags": [
+      {
+        "name": "Consulting",
+        "tooltip": "Learning Goal"
+      },
+      {
+        "name": "Technological Research",
+        "tooltip": "Improvement"
+      }
+    ],
+    "frameworks": [{ "name": "React.js", "icon": "react" }],
+    "ides": [],
+    "languages": [
+      { "name": "JavaScript", "icon": "js" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS", "icon": "css3-alt" },
+      { "name": "JSON", "icon": "" }
+    ],
+    "development": "Frontend",
+    "databases": ["JSON files"],
+    "roleDescription": "Lead Developer - I was fully responsible for every part of the website and there were no other people involved."
+  },
+  {
+    "title": "Hoge Vucht - Doughnut",
+    "year": 2024,
+    "projectType": "Website",
+    "codeUrl": "https://github.com/Piukaas/hoge-vucht-doughnut",
+    "description": "This project is designed for a concept community platform to various activities and initiatives within the Hoge Vucht community. The website serves as an interactive platform where users can explore upcoming events, ongoing projects, and the positive impacts of Doughnut Economics in the neighborhood. It provides detailed information on each activity and Doughnut Economics. The site also includes features such as filtering and searching for specific activities, ensuring accessibility for all users. This platform aims to foster community involvement and collaboration, offering a user-friendly interface to navigate through the diverse offerings in Hoge Vucht.",
+    "imageUrl": "../../../assets/hoge-vucht-doughnut.png",
+    "tags": [
+      {
+        "name": "Community",
+        "tooltip": "Goal"
+      },
+      {
+        "name": "UX design",
+        "tooltip": "Design"
+      }
+    ],
+    "frameworks": [{ "name": "React.js", "icon": "react" }],
+    "ides": ["Visual Studio Code"],
+    "languages": [
+      { "name": "JavaScript", "icon": "js" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS", "icon": "css3-alt" },
+      { "name": "JSON", "icon": "" }
+    ],
+    "development": "Frontend",
+    "databases": ["JSON files"],
+    "roleDescription": "Lead Developer - I was fully responsible for every part of the website and there were no other people involved."
+  },
+  {
     "title": "AvansDevOps",
     "year": 2024,
     "projectType": "Algorithm",
@@ -207,7 +265,7 @@
       { "name": "JSON", "icon": "" }
     ],
     "development": "Frontend",
-    "databases": [],
+    "databases": ["JSON files"],
     "roleDescription": "Lead Developer - I was fully responsible for every part of the portfolio website and there were no other people involved."
   },
   {
