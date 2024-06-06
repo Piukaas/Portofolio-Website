@@ -29,6 +29,36 @@
     "roleDescription": "Lead Developer - I was fully responsible for every part of the website and there were no other people involved."
   },
   {
+    "title": "Game Tournament",
+    "year": 2024,
+    "projectType": "Website",
+    "codeUrl": "https://github.com/Piukaas/Game-Tournament",
+    "description": "This gaming tournament website is a passion project developed for me and my brothers, designed to organize and manage our gaming tournaments for fun and enjoyment. Built with an integration of an Express.js API connected to a MongoDB database, the website allows all of us to contribute and enhance its functionality. It features capabilities to add new games, create and manage tournaments, and customize rules and scoring for each game. Our goal is to streamline the tournament organization process and enhance our gaming experiences through this interactive platform.",
+    "imageUrl": "../../../assets/game-tournament.png",
+    "tags": [
+      {
+        "name": "Hobby Project",
+        "tooltip": "Goal"
+      }
+    ],
+    "frameworks": [
+      { "name": "Angular", "icon": "angular" },
+      { "name": "Express.js", "icon": "node-js" }
+    ],
+    "ides": ["Visual Studio Code"],
+    "languages": [
+      { "name": "TypeScript", "icon": "" },
+      { "name": "JavaScript", "icon": "js" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS", "icon": "css3-alt" },
+      { "name": "NoSQL", "icon": "" },
+      { "name": "JSON", "icon": "" }
+    ],
+    "development": "Full stack",
+    "databases": ["MongoDB"],
+    "roleDescription": "Lead Developer - I was fully responsible for every part of the website and there were no other people involved."
+  },
+  {
     "title": "Hoge Vucht - Doughnut",
     "year": 2024,
     "projectType": "Website",
