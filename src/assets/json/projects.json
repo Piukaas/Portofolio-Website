@@ -39,6 +39,10 @@
       {
         "name": "Hobby Project",
         "tooltip": "Goal"
+      },
+      {
+        "name": "IGDB API",
+        "tooltip": "API"
       }
     ],
     "frameworks": [
