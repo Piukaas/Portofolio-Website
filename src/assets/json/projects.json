@@ -1,5 +1,38 @@
 [
   {
+    "title": "CM.com - Internship",
+    "year": 2024,
+    "projectType": "Experience",
+    "codeUrl": "",
+    "description": "During my internship at CM.com, I undertook a project aimed at creating a new Venue Designer for the Sports team. My focus was on creating a new version of it with more features and better performance. Prior to my project, the old version has bad performance, limited amount of features and there wasn't a good overview available of the whole venue. My solution involved imporving this process. This enabled the users to use create the whole venue, without switching and having to create new section.",
+    "imageUrl": "../../../assets/cm.png",
+    "tags": [
+      {
+        "name": "Paper.js",
+        "tooltip": "Vector Graphics",
+        "type": "Library"
+      },
+      { "name": "Postman", "tooltip": "API testing", "type": "Program" }
+    ],
+    "frameworks": [
+      { "name": "Angular", "icon": "angular" },
+      { "name": "Laravel", "icon": "laravel" },
+      { "name": "Phalcon", "icon": "" }
+    ],
+    "ides": ["PHPStorm"],
+    "languages": [
+      { "name": "TypeScript", "icon": "" },
+      { "name": "PHP", "icon": "php" },
+      { "name": "Go", "icon": "golang" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS", "icon": "css3-alt" },
+      { "name": "SQL", "icon": "" }
+    ],
+    "development": "Full stack",
+    "databases": ["MariaDB"],
+    "roleDescription": "Intern software developer - I was responsible for creating a new Venue Designer."
+  },
+  {
     "title": "Urban Innovation - Minor",
     "year": 2024,
     "projectType": "Experience",
