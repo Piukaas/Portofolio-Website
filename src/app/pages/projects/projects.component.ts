@@ -1,6 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { filter, take } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
+import { filter, take, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-projects',
@@ -9,8 +10,27 @@ import { filter, take } from 'rxjs/operators';
 export class ProjectsComponent {
   @ViewChild('nextView', { static: true })
   nextViewRef!: ElementRef;
+  projects$: any;
+  projectTypeCounts: { [key: string]: number } = {};
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private http: HttpClient) {}
+
+  ngOnInit() {
+    this.projects$ = this.http.get('assets/json/projects.json');
+    this.projects$
+      .pipe(
+        map((projects: any[]) => {
+          // Count the number of projects for each type
+          projects.forEach((project: any) => {
+            if (!this.projectTypeCounts[project.projectType]) {
+              this.projectTypeCounts[project.projectType] = 0;
+            }
+            this.projectTypeCounts[project.projectType]++;
+          });
+        })
+      )
+      .subscribe();
+  }
 
   scrollNextView() {
     this.router.events

@@ -2,81 +2,90 @@
   <div class="row content-center">
     <!-- Websites -->
     <div class="col-md-3 col-6">
-      <button
-        class="category-button websites"
+      <category-card
         (click)="navigateToProjects('Website')"
-      >
-        <i class="fa-solid fa-xl fa-globe icon-button"></i>
-        <h4>Websites</h4>
-      </button>
+        [title]="'Websites'"
+        [images]="['image1.jpg', 'image2.jpg']"
+        [projectCount]="projectTypeCounts['Website']"
+        [icon]="'fa-globe'"
+      ></category-card>
     </div>
 
     <!-- API Projects -->
     <div class="col-md-3 col-6">
-      <button class="category-button apis" (click)="navigateToProjects('API')">
-        <i class="fa-solid fa-xl fa-upload icon-button"></i>
-        <h4>APIs</h4>
-      </button>
+      <category-card
+        (click)="navigateToProjects('API')"
+        [title]="'APIs'"
+        [images]="['image1.jpg', 'image2.jpg']"
+        [projectCount]="projectTypeCounts['API']"
+        [icon]="'fa-upload'"
+      ></category-card>
     </div>
 
     <!-- Data Projects -->
     <div class="col-md-3 col-6">
-      <button class="category-button data" (click)="navigateToProjects('Data')">
-        <i class="fa-solid fa-xl fa-database icon-button"></i>
-        <h4>Data projects</h4>
-      </button>
+      <category-card
+        (click)="navigateToProjects('Data')"
+        [title]="'Data projects'"
+        [images]="['image1.jpg', 'image2.jpg']"
+        [projectCount]="projectTypeCounts['Data']"
+        [icon]="'fa-database'"
+      ></category-card>
     </div>
 
     <!-- Mobile Applications -->
     <div class="col-md-3 col-6">
-      <button
-        class="category-button apps"
+      <category-card
         (click)="navigateToProjects('Mobile')"
-      >
-        <i class="fa-solid fa-xl fa-mobile-screen-button icon-button"></i>
-        <h4>Applications</h4>
-      </button>
+        [title]="'Applications'"
+        [images]="['image1.jpg', 'image2.jpg']"
+        [projectCount]="projectTypeCounts['Mobile']"
+        [icon]="'fa-mobile-screen-button'"
+      ></category-card>
     </div>
 
     <!-- Games -->
     <div class="col-md-3 col-6">
-      <button
-        class="category-button games"
+      <category-card
         (click)="navigateToProjects('Game')"
-      >
-        <i class="fa-solid fa-xl fa-gamepad icon-button"></i>
-        <h4>Games</h4>
-      </button>
+        [title]="'Games'"
+        [images]="['image1.jpg', 'image2.jpg']"
+        [projectCount]="projectTypeCounts['Game']"
+        [icon]="'fa-gamepad'"
+      ></category-card>
     </div>
 
     <!-- Algorithms -->
     <div class="col-md-3 col-6">
-      <button
-        class="category-button algorithms"
+      <category-card
         (click)="navigateToProjects('Algorithm')"
-      >
-        <i class="fa-solid fa-xl fa-code icon-button"></i>
-        <h4>Algorithms</h4>
-      </button>
+        [title]="'Algorithms'"
+        [images]="['image1.jpg', 'image2.jpg']"
+        [projectCount]="projectTypeCounts['Algorithm']"
+        [icon]="'fa-code'"
+      ></category-card>
     </div>
 
     <!-- Experiences -->
     <div class="col-md-3 col-6">
-      <button
-        class="category-button experiences"
+      <category-card
         (click)="navigateToProjects('Experience')"
-      >
-        <i class="fa-solid fa-xl fa-briefcase icon-button"></i>
-        <h4>Experiences</h4>
-      </button>
+        [title]="'Experience'"
+        [images]="['image1.jpg', 'image2.jpg']"
+        [projectCount]="projectTypeCounts['Experience']"
+        [icon]="'fa-briefcase'"
+      ></category-card>
     </div>
 
     <!-- Gaming -->
     <div class="col-md-3 col-6">
-      <button class="category-button rockpaper" (click)="navigateToGames()">
-        <i class="fa-solid fa-xl fa-dice icon-button"></i>
-        <h4>Play some games</h4>
-      </button>
+      <category-card
+        (click)="navigateToGames()"
+        [title]="'Play some games'"
+        [images]="['image1.jpg', 'image2.jpg']"
+        [projectCount]="1"
+        [icon]="'fa-dice'"
+      ></category-card>
     </div>
 
     <a class="discover center-text" (click)="allProjects()"

@@ -18,6 +18,7 @@ import { CategoryProjectsComponent } from './pages/categoryprojects/category.com
 import { YearProjectsComponent } from './pages/yearprojects/yearprojects.component';
 import { GamesComponent } from './pages/games/games.component';
 import { RockComponent } from './pages/games/rockpaperscissors/rock.component';
+import { CategoryCardComponent } from './pages/category-card/category-card.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { RockComponent } from './pages/games/rockpaperscissors/rock.component';
     YearProjectsComponent,
     GamesComponent,
     RockComponent,
+    CategoryCardComponent,
   ],
   imports: [
     CommonModule,
