@@ -19,7 +19,7 @@
       { "name": "Laravel", "icon": "laravel" },
       { "name": "Phalcon", "icon": "" }
     ],
-    "ides": ["PHPStorm"],
+    "ides": ["PHPStorm", "GoLand"],
     "languages": [
       { "name": "TypeScript", "icon": "" },
       { "name": "PHP", "icon": "php" },
@@ -29,7 +29,7 @@
       { "name": "SQL", "icon": "" }
     ],
     "development": "Full stack",
-    "databases": ["MariaDB"],
+    "databases": ["MariaDB", "PostgreSQL"],
     "roleDescription": "Intern software developer - I was responsible for creating a new Venue Designer."
   },
   {
