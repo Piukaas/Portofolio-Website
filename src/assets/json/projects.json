@@ -8,8 +8,8 @@
     "imageUrl": "../../../assets/cm.png",
     "tags": [
       {
-        "name": "Paper.js",
-        "tooltip": "Vector Graphics",
+        "name": "Konva.js",
+        "tooltip": "Canvas Management",
         "type": "Library"
       },
       { "name": "Postman", "tooltip": "API testing", "type": "Program" }
